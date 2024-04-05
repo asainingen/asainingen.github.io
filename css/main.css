@@ -1,0 +1,203 @@
+/* ユーザーエージェントスタイルシートを無効化するcssを読み込む */
+
+@import "reset.css";
+
+/* グローバル変数定義 */
+
+:root {
+    --main-font: shippori-antique;
+    font-size: 14px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow: auto;
+}
+
+.background {
+    background: url("https://half-create.org//images/background.png");
+    background-size: auto;
+    background-repeat: repeat;
+    position: relative;
+    overflow: auto;
+}
+
+.without_footer {
+    display: flex;
+}
+
+
+/* 以下、サイドバー */
+
+#sidebar_outer {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 200px;
+    font-family: var(--main-font);
+}
+
+.sidebar a:visited {
+    color: rgba(0, 0, 0, 1);
+}
+
+.sidebar a:link {
+    color: rgba(0, 0, 0, 1);
+}
+
+.sidebar_logo_jp {
+    width: 280px;
+    padding-top: 20%;
+    font-size: 64px;
+    text-align: left;
+    line-height: 100%;
+    border-bottom: dashed 0.06em #1D1B6B;
+}
+
+.sidebar_logo_en {
+    width: 350px;
+    padding-top: 10%;
+    font-size: 32px;
+    text-align: right;
+    line-height: 50%;
+    padding-bottom: 110px;
+}
+
+.sidebar_category {
+    width: 350px;
+    left: 30px;
+    font-size: 42px;
+    text-align: left;
+    line-height: 120%;
+    list-style: none;
+}
+
+.sidebar_nowpage {
+    width: 350px;
+    left: 50px;
+    font-size: 34px;
+    text-align: left;
+    line-height: 50%;
+    padding-bottom: 120px;
+}
+
+.sidebar_index {
+    width: 350px;
+    font-size: 34px;
+    text-align: right;
+    line-height: 120%;
+}
+
+
+/* 以下、フッター */
+
+.footer_copyright {
+    font-size: 10px;
+    position: relative;
+    text-align: left;
+    line-height: 120%;
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+    font-weight: 600;
+}
+
+
+/* 以下、本文 */
+
+.main {
+    padding-top: 10%;
+    font-family: Noto sans;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 64px;
+    font-family: var(--main-font);
+    padding-top: 5rem;
+}
+
+.subtitle_en {
+    font-size: 48px;
+    font-family: var(--main-font);
+    padding-bottom: 2rem;
+}
+
+h2 {
+    font-size: 48px;
+    font-family: var(--main-font);
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+h3 {
+    font-size: 42px;
+    font-family: var(--main-font);
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+blockquote {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgba( 255, 255, 255, 0.2);
+}
+
+.main_text {
+    color: rgba(0, 0, 0, 1);
+    position: relative;
+    text-align: left;
+    line-height: 180%;
+}
+
+#toggle_button {
+    display: none;
+}
+
+.link {
+    display: flex;
+}
+
+
+/* レスポンシブデザイン */
+
+@media screen and (max-width: 959px) {
+    /* タブレット用 */
+    .sidebar {
+        z-index: 2;
+    }
+    #toggle_button {
+        font-size: 30px;
+        display: block;
+        z-index: 3;
+    }
+    .icon {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* スマホ用 */
+    .sidebar {
+        z-index: 2;
+    }
+    #toggle_button {
+        font-size: 30px;
+        display: block;
+        z-index: 3;
+    }
+    .icon {
+        display: none;
+    }
+}
