@@ -1,7 +1,7 @@
 # ASAI Hitoshi | 麻井均
 ## Affiliation
-- [Half Create](half-create.org)
-- [Waseda VTuber Society](waseda.vken.org)
+- [Half Create](https://half-create.org)
+- [Waseda VTuber Society](https://waseda.vken.org)
 
 ## Interests
 Science Fiction, Information Sciences
