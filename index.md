@@ -1,3 +1,8 @@
+---
+layout: default
+title: Top
+---
+
 # Welcome to ASAI Hitoshi's Website
 created: 2024-04-05
 

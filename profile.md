@@ -1,3 +1,8 @@
+---
+layout: default
+title: Profile
+---
+
 # ASAI Hitoshi | 麻井均
 ## Affiliation
 - [Half Create](https://half-create.org)
