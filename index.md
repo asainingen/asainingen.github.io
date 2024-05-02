@@ -3,7 +3,7 @@ layout: default
 title: Top
 ---
 
-# Welcome to ASAI Hitoshi's Website
+## Welcome to ASAI Hitoshi's Website
 created: 2024-04-05
 
 This is a personal website of ASAI Hitoshi (麻井均).

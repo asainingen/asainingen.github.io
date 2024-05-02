@@ -39,6 +39,12 @@ footer {
 
 nav {
     text-align: center;
+    margin-left: 20px;
+    border-bottom: none;
+}
+
+a,a:hover,a:visited{
+    color: inherit;
 }
 
 p {
@@ -48,13 +54,18 @@ p {
 
 /* h要素 */
 
-h1 {
+h1 {padding-top: 20px;
+    text-align: center;
+    font-size: var(--title-fontsize);}
+
+
+h2 {
     padding-top: 20px;
     text-align: center;
     font-size: var(--title-fontsize);
 }
 
-h2 {
+h3 {
     text-align: center;
     border-bottom: 1px solid var(--hr-color);
 }
