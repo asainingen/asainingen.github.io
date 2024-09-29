@@ -20,4 +20,4 @@ I plan to publish my work on this website as well in the future.
 None.
 
 ### Collaborations
-[Oki Whitepaper](https://oki.half-create.org)
+[Oki Whitepaper](https://oki.half-create.org) (As a member of Half-Create)
