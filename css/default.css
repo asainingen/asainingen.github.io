@@ -59,12 +59,13 @@ h1 {padding-top: 20px;
 
 h2 {
     padding-top: 20px;
-    text-align: center;
+    padding-left: var(--title-fontsize);
     font-size: var(--title-fontsize);
 }
 
 h3 {
-    text-align: center;
+    padding-left: var(--main-fontsize);
+    font-size: var(--main-fontsize);
     border-bottom: 1px solid var(--hr-color);
 }
 
