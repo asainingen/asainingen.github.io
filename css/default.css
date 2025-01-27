@@ -3,10 +3,10 @@
 :root {
   --title-fontsize: 40px;
   --main-fontsize: 20px;
-  --hr-color: #222222;
+  --hr-color: #333333;
   --bg-color: #111111;
   --text-color: #00ee00;
-  --link-text-color: #00ff00;
+  --link-text-color: #111111;
   --link-bg-color: #ffd700;
 }
 
