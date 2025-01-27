@@ -5,8 +5,9 @@
   --main-fontsize: 20px;
   --hr-color: #222222;
   --bg-color: #111111;
-  --text-color: #32cd32;
-  --link-color: #00ff00;
+  --text-color: #00ee00;
+  --link-text-color: #00ff00;
+  --link-bg-color: #f8f8ff;
 }
 
 * {
@@ -53,7 +54,9 @@ nav {
 a,
 a:hover,
 a:visited {
-  color: var(--link-color);
+  color: var(--link-text-color);
+  background-color: var(--link-bg-color);
+  text-decoration: none;
 }
 
 p {
