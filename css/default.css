@@ -4,7 +4,7 @@
   --title-fontsize: 40px;
   --main-fontsize: 20px;
   --hr-color: black;
-  --header-color: #bce2e8;
+  --header-color: white;
   --main-color: white;
 }
 
@@ -32,10 +32,10 @@ header {
 }
 
 main {
-  margin-top: 50px;
   margin-left: 10%;
   margin-right: 10%;
   background-color: var(--main-color);
+  scroll-margin-top: 100px;
 }
 
 footer {
