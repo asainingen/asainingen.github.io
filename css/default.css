@@ -4,12 +4,14 @@
   --title-fontsize: 40px;
   --main-fontsize: 20px;
   --hr-color: black;
-  --header-color: white;
-  --main-color: white;
+  --header-color: #111111;
+  --main-color: #111111;
+  --text-color: #00ff00;
 }
 
 * {
   font-size: var(--main-fontsize);
+  color: var(--text-color);
 }
 
 /* 主要要素 */
@@ -39,6 +41,8 @@ footer {
   text-align: left;
   bottom: 0;
   font-size: calc(var(--main-fontsize) / 2);
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 nav {
