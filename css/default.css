@@ -36,8 +36,9 @@ main {
 }
 
 footer {
-  text-align: center;
+  text-align: left;
   bottom: 0;
+  font-size: calc(var(--main-fontsize) / 2);
 }
 
 nav {
