@@ -22,20 +22,17 @@ body {
 
 header {
   position: sticky;
-  top: 0px;
   width: 100%;
+  top: 0px;
   margin-top: 0px;
   padding-top: 0px;
-  padding-bottom: 50px;
   background-color: var(--header-color);
-  box-sizing: border-box;
 }
 
 main {
   margin-left: 10%;
   margin-right: 10%;
   background-color: var(--main-color);
-  scroll-margin-top: 100px;
 }
 
 footer {
