@@ -4,14 +4,14 @@
   --title-fontsize: 40px;
   --main-fontsize: 20px;
   --hr-color: black;
-  --header-color: #111111;
-  --main-color: #111111;
+  --bg-color: #111111;
   --text-color: #00ff00;
 }
 
 * {
   font-size: var(--main-fontsize);
   color: var(--text-color);
+  background-color: var(--bg-color);
 }
 
 /* 主要要素 */
@@ -28,13 +28,11 @@ header {
   top: 0px;
   margin-top: 0px;
   padding-top: 0px;
-  background-color: var(--header-color);
 }
 
 main {
   margin-left: 10%;
   margin-right: 10%;
-  background-color: var(--main-color);
 }
 
 footer {
