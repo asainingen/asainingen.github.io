@@ -3,9 +3,10 @@
 :root {
   --title-fontsize: 40px;
   --main-fontsize: 20px;
-  --hr-color: black;
+  --hr-color: #00e000;
   --bg-color: #111111;
   --text-color: #00ff00;
+  --link-color: #00e000;
 }
 
 * {
@@ -52,7 +53,7 @@ nav {
 a,
 a:hover,
 a:visited {
-  color: inherit;
+  color: var(--link-color);
 }
 
 p {
