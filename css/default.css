@@ -15,7 +15,7 @@
 /* 主要要素 */
 
 header {
-  position: relative;
+  position: sticky;
   top: 0;
   width: 100%;
   margin-top: 0px;
