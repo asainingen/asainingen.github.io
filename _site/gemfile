@@ -1,0 +1,4 @@
+source "https://rubygems.org"
+
+gem "jekyll", "~> 4.0" # Jekyllのバージョンを指定（必要に応じて変更）
+gem "bundler" # bundler自身も記述しておく

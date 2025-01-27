@@ -1,4 +1,15 @@
-markdown: redcarpet
+markdown: kramdown
 redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "tables", "lax_spacing", "space_after_headers
-", "quote", "footnotes"]
+  extensions: [
+      "no_intra_emphasis",
+      "fenced_code_blocks",
+      "autolink",
+      "strikethrough",
+      "superscript",
+      "tables",
+      "lax_spacing",
+      "space_after_headers
+      ",
+      "quote",
+      "footnotes",
+    ]
