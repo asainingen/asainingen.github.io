@@ -16,22 +16,26 @@
 
 /* グリッドレイアウト */
 .container {
+  position: relative;
   display: grid;
   grid-template-areas:
     "header header header"
     "sidebar-left main-content sidebar-right"
-    ". footer .";
-  grid-template-rows: 1fr 3fr 1fr;
-  grid-template-columns: auto 1fr auto;
-  grid-gap: 20px;
+    "footer . .";
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 200px auto 200px;
+  grid-gap: 40px;
 }
 
 header {
   grid-area: header;
+  text-align: center;
+  margin-top: 40px;
 }
 
 .sidebar-left {
   grid-area: sidebar-left;
+  padding-left: 40px;
 }
 
 main {
@@ -44,28 +48,72 @@ main {
 
 footer {
   grid-area: footer;
-  text-align: left;
-  font-size: calc(var(--main-fontsize) / 2);
+  padding-left: 40px;
 }
 
 /* 主要要素 */
-nav {
+
+.sidebar-right a {
+  font-size: var(--main-fontsize);
+  padding-left: var(--main-fontsize);
+  text-decoration: none;
+}
+
+#header-nav {
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 header a {
   text-decoration: none;
+}
+
+header nav a {
   padding: 10px;
+}
+
+#site-title {
+  margin: auto;
+  text-align: center;
+  font-size: var(--title-fontsize);
+}
+
+#footer-info {
+  text-align: left;
+  font-size: calc(var(--main-fontsize) / 2);
+}
+
+.sidebar-left a {
+  text-decoration: none;
+  line-height: calc(var(--main-fontsize) * 1.5);
+}
+
+.sidebar-left .sidebar-section {
+  font-size: var(--main-fontsize);
+  border-bottom: 2px solid var(--hr-color);
+  margin-left: -20px;
+  padding-top: 8px;
+}
+
+.sidebar-right .sidebar-section {
+  font-size: var(--main-fontsize);
+  border-bottom: 2px solid var(--hr-color);
+  padding-top: 8px;
 }
 
 main a {
   text-decoration: underline;
 }
 
-main p {
+p {
   line-height: calc(var(--main-fontsize) * 1.5);
-  padding-left: var(--main-fontsize);
   font-size: var(--main-fontsize);
+  margin: auto;
+}
+
+main p {
+  padding-left: var(--main-fontsize);
 }
 
 /* h要素 */
@@ -73,16 +121,15 @@ main p {
 h1 {
   text-align: center;
   font-size: var(--title-fontsize);
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 h2 {
-  padding-left: var(--title-fontsize);
-  font-size: var(--title-fontsize);
-}
-
-h3 {
   font-size: var(--main-fontsize);
   border-bottom: 2px solid var(--hr-color);
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 /* テーブル */
@@ -93,8 +140,8 @@ ul {
   padding: 0;
 }
 
-ul li {
-  line-height: calc(var(--main-fontsize) * 1.5);
+main ul li {
+  height: calc(var(--main-fontsize) * 1.5);
   padding-left: var(--main-fontsize);
 }
 

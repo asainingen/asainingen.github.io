@@ -3,10 +3,10 @@ layout: default
 title: Profile
 ---
 
-## Works
+# Works
 
-### Novels
+## Novels
 
-### Essays
+## Essays
 
-### Other Works
+## Other Works
