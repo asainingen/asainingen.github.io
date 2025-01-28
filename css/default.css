@@ -11,44 +11,66 @@
 * {
   font-size: var(--main-fontsize);
   color: var(--text-color);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  top: 0;
   background-color: var(--bg-color);
 }
 
 /* グリッドレイアウト */
 .container {
-  position: relative;
   display: grid;
   grid-template-areas:
     "header header header"
     "sidebar-left main-content sidebar-right"
-    "footer . .";
-  grid-template-rows: auto auto auto;
+    "footer footer footer";
+  grid-template-rows: 160px auto 20px;
   grid-template-columns: 200px auto 200px;
   grid-gap: 40px;
+  min-height: 100vh;
+  position: relative;
 }
 
 header {
   grid-area: header;
   text-align: center;
   margin-top: 40px;
+  position: relative;
 }
 
 .sidebar-left {
   grid-area: sidebar-left;
   padding-left: 40px;
+  position: sticky;
+  width: 100%;
+  height: fit-content;
+  top: 0;
+  align-self: start;
 }
 
 main {
   grid-area: main-content;
+  position: relative;
 }
 
 .sidebar-right {
   grid-area: sidebar-right;
+  position: relative;
 }
 
 footer {
   grid-area: footer;
-  padding-left: 40px;
+  top: 100vh;
+  width: 100%;
+  position: sticky;
+  z-index: 2;
 }
 
 /* 主要要素 */
