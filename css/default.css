@@ -6,8 +6,6 @@
   --hr-color: #333333;
   --bg-color: #111111;
   --text-color: #00ee00;
-  --link-text-color: #111111;
-  --link-bg-color: #ffd700;
 }
 
 * {
@@ -16,83 +14,88 @@
   background-color: var(--bg-color);
 }
 
-/* 主要要素 */
-
-body {
-  top: 0px;
-  margin-top: 0px;
-  padding-top: 0px;
+/* グリッドレイアウト */
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "sidebar-left main-content sidebar-right"
+    ". footer .";
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-columns: auto 1fr auto;
+  grid-gap: 20px;
 }
 
 header {
-  position: sticky;
-  width: 100%;
-  top: 0px;
-  margin-top: 0px;
-  padding-top: 0px;
+  grid-area: header;
+}
+
+.sidebar-left {
+  grid-area: sidebar-left;
 }
 
 main {
-  margin-left: 10%;
-  margin-right: 10%;
+  grid-area: main-content;
+}
+
+.sidebar-right {
+  grid-area: sidebar-right;
 }
 
 footer {
+  grid-area: footer;
   text-align: left;
-  bottom: 0;
   font-size: calc(var(--main-fontsize) / 2);
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
+/* 主要要素 */
 nav {
   text-align: center;
-  margin-left: 20px;
-  border-bottom: none;
 }
 
-a,
-a:hover,
-a:visited {
-  color: var(--link-text-color);
-  background-color: var(--link-bg-color);
+header a {
   text-decoration: none;
+  padding: 10px;
 }
 
-p {
-  line-height: 1.5em;
+main a {
+  text-decoration: underline;
+}
+
+main p {
+  line-height: calc(var(--main-fontsize) * 1.5);
+  padding-left: var(--main-fontsize);
+  font-size: var(--main-fontsize);
 }
 
 /* h要素 */
 
 h1 {
-  padding-top: 20px;
   text-align: center;
   font-size: var(--title-fontsize);
 }
 
 h2 {
-  padding-top: 20px;
   padding-left: var(--title-fontsize);
   font-size: var(--title-fontsize);
 }
 
 h3 {
-  padding-left: var(--main-fontsize);
   font-size: var(--main-fontsize);
-  border-bottom: 1px solid var(--hr-color);
+  border-bottom: 2px solid var(--hr-color);
 }
 
 /* テーブル */
 
 ul {
   list-style: none;
-  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
 }
 
-ol {
-  list-style-position: inside;
-  line-height: 1.5em;
+ul li {
+  line-height: calc(var(--main-fontsize) * 1.5);
+  padding-left: var(--main-fontsize);
 }
 
 table {
@@ -103,10 +106,4 @@ table {
 
 td {
   vertical-align: top;
-}
-
-/* クラス */
-
-.month {
-  text-align: right;
 }

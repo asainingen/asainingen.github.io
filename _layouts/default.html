@@ -4,25 +4,39 @@
     <meta charset="utf-8" />
     <title>{{page.title}} | ASAI Hitoshi</title>
     <meta name="author" content="ASAI Hitoshi" />
-    <link
-      rel="stylesheet"
-      href="https://asai.half-create.org/css/normalize.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://asai.half-create.org/css/default.css"
-    />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/default.css" />
   </head>
 
   <body>
-    <header>
-      <h1>ASAI Hitoshi's Website</h1>
-      <nav>
-        <a href="https://asai.half-create.org/">Top</a>
-        <a href="https://asai.half-create.org/profile">About</a>
-      </nav>
-    </header>
-    <main>{{content}}</main>
-    <footer>(c)2025 ASAI Hitoshi</footer>
+    <div class="container">
+      <header>
+        <div class="header">
+          <h1>
+            <a href="/">ASAI Hitoshi's Website</a>
+          </h1>
+          <nav>
+            <a href="/">Top</a>
+            <a href="/profile">About</a>
+            <a href="/works">Works</a>
+          </nav>
+        </div>
+      </header>
+      <div class="sidebar-left">
+        <nav>
+          <ul>
+            <li><a href="/profile">About</a></li>
+            <li><a href="/works">Works</a></li>
+          </ul>
+        </nav>
+      </div>
+      <main>{{content}}</main>
+      <div class="sidebar-right">
+        <p>Links</p>
+      </div>
+      <footer>
+        <div class="footer">(c)2025 ASAI Hitoshi</div>
+      </footer>
+    </div>
   </body>
 </html>
