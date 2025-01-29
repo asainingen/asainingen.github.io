@@ -1,7 +1,7 @@
 /* ウェブフォント */
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans+JP:wght@400;700&display=swap");
 
-/* グローバル */
+/* general */
 :root {
   --title-fontsize: 40px;
   --main-fontsize: 20px;
@@ -19,6 +19,12 @@
 
 strong {
   font-weight: 700;
+}
+
+p {
+  line-height: calc(var(--main-fontsize) * 1.5);
+  font-size: var(--main-fontsize);
+  margin: auto;
 }
 
 html {
@@ -58,7 +64,7 @@ header {
   grid-area: sidebar-left;
   padding-left: 40px;
   position: sticky;
-  width: 100%;
+  width: auto;
   height: fit-content;
   top: 0;
   align-self: start;
@@ -72,6 +78,7 @@ main {
 .sidebar-right {
   grid-area: sidebar-right;
   position: sticky;
+  padding-right: 40px;
 }
 
 footer {
@@ -84,35 +91,8 @@ footer {
   box-shadow: 0 0 5px #00ff00;
 }
 
-/* 主要要素 */
-
-.sidebar-right a {
-  font-size: var(--main-fontsize);
-  padding-left: var(--main-fontsize);
-  text-decoration: none;
-}
-
-#header-nav {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-header a {
-  text-decoration: none;
-}
-
-header nav a {
-  padding: 10px;
-}
-
-#site-title {
-  margin: auto;
-  text-align: center;
-  font-size: var(--title-fontsize);
-}
-
-/* ネオン感を出す */
+/* common */
+/* ネオン感 */
 .neon {
   color: #00ff00;
   text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
@@ -131,42 +111,75 @@ header nav a {
   }
 }
 
+/* parts */
+/* ヘッダー */
+header a {
+  text-decoration: none;
+}
+
+#header-nav {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#header-nav a {
+  padding: 10px;
+}
+
+#header-nav li {
+  display: inline-block;
+}
+
+#site-title {
+  margin: auto;
+  text-align: center;
+  font-size: var(--title-fontsize);
+}
+
+/* フッター */
 #footer-info {
   text-align: left;
   font-size: calc(var(--main-fontsize) / 2);
   color: var(--bg-color);
 }
 
+/*　サイドバー */
 .sidebar-left a {
   text-decoration: none;
   line-height: calc(var(--main-fontsize) * 1.5);
 }
 
-.sidebar-left .sidebar-section {
+.sidebar-right a {
+  font-size: var(--main-fontsize);
+  padding-left: var(--main-fontsize);
+  text-decoration: none;
+}
+
+.sidebar-left .sidebar-section-title {
   font-size: var(--main-fontsize);
   border-bottom: 2px solid var(--hr-color);
   margin-left: -20px;
   padding-top: 8px;
 }
 
-.sidebar-right .sidebar-section {
+.sidebar-right .sidebar-section-title {
   font-size: var(--main-fontsize);
   border-bottom: 2px solid var(--hr-color);
+  padding-top: 8px;
+}
+
+.sidebar-links {
   padding-top: 8px;
   line-height: 30px;
 }
 
+/* main */
 main a {
   text-decoration: underline;
   color: #00ff00;
   text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
   filter: blur(0.2px);
-}
-
-p {
-  line-height: calc(var(--main-fontsize) * 1.5);
-  font-size: var(--main-fontsize);
-  margin: auto;
 }
 
 main p {
@@ -219,25 +232,21 @@ td {
   vertical-align: top;
 }
 
-/* スマートフォン */
+/* スマートフォン対応 */
 @media (max-width: 768px) {
+  /* 左サイドバーを削除、右サイドバーをmain-content下へ */
   .container {
     grid-template-areas:
       "header"
       "main-content"
-      "sidebar-right"
       "footer";
-    grid-template-rows: 160px auto auto 10px;
+    grid-template-rows: 160px auto 10px;
     grid-template-columns: 1fr;
   }
 
-  .sidebar-left {
-    display: none !important;
-  }
-
+  .sidebar-left,
   .sidebar-right {
-    padding-left: 20px;
-    padding-right: 20px;
+    display: none !important;
   }
 
   header {

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>404 | ASAI Hitoshi</title>
+    <title>{{page.title}} | ASAI Hitoshi</title>
     <meta name="author" content="ASAI Hitoshi" />
     <meta name="author" content="麻井均" />
     <link rel="stylesheet" href="/css/default.css" />
@@ -13,41 +13,19 @@
       <!-- ヘッダー -->
       <header>
         <a href="/en/" id="site-title" class="neon">ASAI Hitoshi's Website</a>
-        <div id="header-nav" class="neon"><nav class="global-nav">
-  <ul>
-    <li><a href="/en/">Top</a></li>
-    <li><a href="/en/profile">About</a></li>
-    <li><a href="/en/works">Works</a></li>
-  </ul>
-</nav>
-</div>
+        <div id="header-nav" class="neon">{% include page-list-en.html %}</div>
       </header>
       <!-- 左サイドバー -->
       <div class="sidebar-left">
         <p class="sidebar-section-title">Menu</p>
-        <div><nav class="global-nav">
-  <ul>
-    <li><a href="/en/">Top</a></li>
-    <li><a href="/en/profile">About</a></li>
-    <li><a href="/en/works">Works</a></li>
-  </ul>
-</nav>
-</div>
+        <div>{% include page-list-en.html %}</div>
       </div>
       <!-- メインコンテンツ -->
-      <main><h1>404</h1>
-<p>Sorry.</p>
-<p>Page not found.</p>
-</main>
+      <main>{{content}}</main>
       <!-- 右サイドバー -->
       <div class="sidebar-right">
         <p class="sidebar-section-title">Links</p>
-        <div class="sidebar-links"><ul class="links">
-  <li><a href="https://twitter.com/asainingen">Twitter(X)</a></li>
-  <li><a href="https://www.pixiv.net/users/70042496">Pixiv</a></li>
-  <li><a href="https://note.com/asainingen">Note</a></li>
-</ul>
-</div>
+        <div class="sidebar-links">{% include links.html %}</div>
       </div>
       <!-- フッター -->
       <footer>

@@ -20,15 +20,16 @@
 
 title: ASAI Hitoshi's Website
 email: asai@half-create.org
-description: Personal Website of ASAI Hitoshi
+description: Personal Website of ASAI Hitoshi.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://asai.half-create.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: asainingen
-github_username: asainingen
+github_username:
 
 # Build settings
 remote_theme:
 plugins:
+  - jekyll-redirect-from
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
