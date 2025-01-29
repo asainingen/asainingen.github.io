@@ -228,11 +228,11 @@ td {
       "sidebar-right"
       "footer";
     grid-template-rows: 160px auto auto 10px;
-    grid-template-columns: 1fr; /* 1列のレイアウト */
+    grid-template-columns: 1fr;
   }
 
   .sidebar-left {
-    display: none; /* サイドバーを非表示 */
+    display: none !important;
   }
 
   .sidebar-right {

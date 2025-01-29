@@ -7,7 +7,7 @@ title: Top
 
 ## Welcome!
 
-This is a personal website of ASAI Hitoshi (麻井均).
+This is a personal website of ASAI Hitoshi.
 
 About me, check [profile page](/profile).
 
