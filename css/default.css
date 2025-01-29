@@ -1,5 +1,7 @@
-/* グローバル */
+/* ウェブフォント */
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans+JP:wght@400;700&display=swap");
 
+/* グローバル */
 :root {
   --title-fontsize: 40px;
   --main-fontsize: 20px;
@@ -9,8 +11,14 @@
 }
 
 * {
+  font-family: "Courier Prime", "IBM Plex Sans JP", monospace, sans-serif;
+  font-weight: 400;
   font-size: var(--main-fontsize);
   color: var(--text-color);
+}
+
+strong {
+  font-weight: 700;
 }
 
 html {
@@ -22,6 +30,7 @@ body {
   margin: 0;
   top: 0;
   background-color: var(--bg-color);
+  filter: blur(0.3px);
 }
 
 /* グリッドレイアウト */
@@ -31,7 +40,7 @@ body {
     "header header header"
     "sidebar-left main-content sidebar-right"
     "footer footer footer";
-  grid-template-rows: 160px auto 20px;
+  grid-template-rows: 160px auto 10px;
   grid-template-columns: 200px auto 200px;
   grid-gap: 40px;
   min-height: 100vh;
@@ -62,7 +71,7 @@ main {
 
 .sidebar-right {
   grid-area: sidebar-right;
-  position: relative;
+  position: sticky;
 }
 
 footer {
@@ -71,6 +80,8 @@ footer {
   width: 100%;
   position: sticky;
   z-index: 2;
+  background-color: var(--text-color);
+  box-shadow: 0 0 5px #00ff00;
 }
 
 /* 主要要素 */
@@ -101,9 +112,29 @@ header nav a {
   font-size: var(--title-fontsize);
 }
 
+/* ネオン感を出す */
+.neon {
+  color: #00ff00;
+  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
+  filter: blur(0.2px);
+}
+
+@keyframes neon-flicker {
+  0% {
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
+  }
+  50% {
+    text-shadow: 0 0 5px #00ff00, 0 0 15px #00ff00, 0 0 30px #00ff00;
+  }
+  100% {
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
+  }
+}
+
 #footer-info {
   text-align: left;
   font-size: calc(var(--main-fontsize) / 2);
+  color: var(--bg-color);
 }
 
 .sidebar-left a {
@@ -122,10 +153,14 @@ header nav a {
   font-size: var(--main-fontsize);
   border-bottom: 2px solid var(--hr-color);
   padding-top: 8px;
+  line-height: 30px;
 }
 
 main a {
   text-decoration: underline;
+  color: #00ff00;
+  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
+  filter: blur(0.2px);
 }
 
 p {
@@ -144,7 +179,8 @@ h1 {
   text-align: center;
   font-size: var(--title-fontsize);
   margin-top: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  font-weight: 700;
 }
 
 h2 {
@@ -162,9 +198,15 @@ ul {
   padding: 0;
 }
 
+main ul {
+  list-style: square;
+  margin-left: var(--main-fontsize);
+  padding: 0;
+}
+
 main ul li {
   height: calc(var(--main-fontsize) * 1.5);
-  padding-left: var(--main-fontsize);
+  padding-left: 0;
 }
 
 table {
@@ -175,4 +217,35 @@ table {
 
 td {
   vertical-align: top;
+}
+
+/* スマートフォン */
+@media (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "main-content"
+      "sidebar-right"
+      "footer";
+    grid-template-rows: 160px auto auto 10px;
+    grid-template-columns: 1fr; /* 1列のレイアウト */
+  }
+
+  .sidebar-left {
+    display: none; /* サイドバーを非表示 */
+  }
+
+  .sidebar-right {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  header {
+    margin-top: 20px;
+  }
+
+  main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }

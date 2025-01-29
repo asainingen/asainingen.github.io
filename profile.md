@@ -13,8 +13,9 @@ He is a student of Waseda University.
 
 ## Affiliation
 
-- [Half Create](https://half-create.org)
-- [Waseda VTuber Society](https://waseda.vken.org)
+[Half Create](https://half-create.org)
+
+[Waseda VTuber Society](https://waseda.vken.org)
 
 ## Interests
 
