@@ -1,6 +1,6 @@
 ---
-layout: default_en
-title: Top
+layout: default
+title: Test
 ---
 
 # Welcome to ASAI Hitoshi's Website

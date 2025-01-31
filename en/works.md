@@ -1,6 +1,6 @@
 ---
-layout: default_en
-title: Profile
+layout: default
+title: Works
 ---
 
 # Works

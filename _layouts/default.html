@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>トップページ | ASAI Hitoshi</title>
+    <title>{{page.title}} | ASAI Hitoshi</title>
     <meta name="author" content="ASAI Hitoshi" />
     <meta name="author" content="麻井均" />
     <link rel="stylesheet" href="/css/default.css" />
@@ -32,77 +32,26 @@
         </div>
         <!-- ヘッダーナビゲーション -->
         <div id="header-nav" class="neon i18n">
-          <nav class="global-nav">
-  <ul>
-    <li><a href="/en/">Top</a></li>
-    <li><a href="/en/profile">About</a></li>
-    <li><a href="/en/works">Works</a></li>
-  </ul>
-</nav>
-
+          {% include page-list.html %}
         </div>
       </header>
       <!-- 左サイドバー -->
       <div class="sidebar sidebar-left">
         <!-- 言語ボタン -->
-        <div><div class="switcher">
-  <button class="lang-switch"></button></button>
-</div>
-</div>
+        <div>{% include lang-switch.html %}</div>
         <!-- サイドバーナビゲーション -->
         <p class="sidebar-section-title">Menu</p>
-        <div class="i18n"><nav class="global-nav">
-  <ul>
-    <li><a href="/en/">Top</a></li>
-    <li><a href="/en/profile">About</a></li>
-    <li><a href="/en/works">Works</a></li>
-  </ul>
-</nav>
-</div>
+        <div class="i18n">{% include page-list.html %}</div>
       </div>
       <!-- メインコンテンツ -->
-      <main><h1 id="麻井均個人サイト">麻井均個人サイト</h1>
-
-<h2 id="概要">概要</h2>
-
-<p>このサイトは麻井均の個人サイトです。</p>
-
-<p>プロフィールについては<a href="./profile">こちら</a>。</p>
-
-<p>半知半会については <a href="https://half-create.org">こちら</a>。</p>
-
-<h2 id="sns">SNS</h2>
-
-<ul class="links">
-  <li>
-    <a href="https://twitter.com/asainingen" target="_blank">Twitter(X)</a>
-  </li>
-  <li>
-    <a href="https://www.pixiv.net/users/70042496" target="_blank">Pixiv</a>
-  </li>
-  <li><a href="https://note.com/asainingen" target="_blank">Note</a></li>
-</ul>
-
-</main>
+      <main>{{content}}</main>
       <!-- 右サイドバー -->
       <div class="sidebar sidebar-right">
         <!-- 言語ボタン -->
-        <div class="switcher">
-  <button class="lang-switch"></button></button>
-</div>
-
+        {% include lang-switch.html %}
         <!-- SNSリンク -->
         <p class="sidebar-section-title">Links</p>
-        <div class="sidebar-links"><ul class="links">
-  <li>
-    <a href="https://twitter.com/asainingen" target="_blank">Twitter(X)</a>
-  </li>
-  <li>
-    <a href="https://www.pixiv.net/users/70042496" target="_blank">Pixiv</a>
-  </li>
-  <li><a href="https://note.com/asainingen" target="_blank">Note</a></li>
-</ul>
-</div>
+        <div class="sidebar-links">{% include links.html %}</div>
       </div>
       <!-- フッター -->
       <footer>
