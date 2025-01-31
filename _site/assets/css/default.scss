@@ -12,6 +12,11 @@
   --neon-color: #00ff00;
 }
 
+.sidebar .current-page {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}
+
 * {
   font-family: "Courier Prime", "IBM Plex Sans JP", monospace, sans-serif;
   font-weight: 400;

@@ -1,0 +1,21 @@
+#lang-container {
+  display: grid;
+  grid-template-areas: "english japanese";
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0px;
+  filter: blur(0.2px);
+  grid-gap: 0px;
+  min-height: 100vh;
+  position: relative;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#english {
+  grid-area: english;
+}
+
+#japanese {
+  grid-area: japanese;
+}
