@@ -13,18 +13,13 @@
     <div class="container">
       <!-- ヘッダー -->
       <header>
-        <!-- ハンバーガーメニューボタン -->
-        <button id="sidebar-toggle" class="sidebar-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
         <!-- サイトメインタイトル -->
         <div class="i18n">
           <a href="/en/" id="site-title" class="title neon">
             ASAI Hitoshi's Website
           </a>
-          <a href="/en/" id="site-title-mobile" class="title neon">
+          <!-- モバイル：タイトル -->
+          <a href="/en/" id="site-title-mobile" class="title neon mobile-only">
             ASAI<br />
             Hitoshi's<br />
             Website
@@ -44,11 +39,6 @@
       </header>
       <!-- 左サイドバー -->
       <div class="sidebar sidebar-left">
-        <!-- 言語ボタン -->
-        <div><div class="switcher">
-  <button class="lang-switch"></button></button>
-</div>
-</div>
         <!-- サイドバーナビゲーション -->
         <p class="sidebar-section-title">Menu</p>
         <div class="i18n"><nav class="global-nav">
@@ -87,12 +77,55 @@
       </div>
       <!-- フッター -->
       <footer>
-        <!-- 著作権表示 -->
         <div id="footer-info">(c)2025 ASAI Hitoshi</div>
       </footer>
     </div>
-    <!-- オーバーレイ -->
-    <div class="overlay"></div>
+
+    <!-- include mobile.html（ハンバーガーメニュー） -->
+    <!-- モバイル -->
+<div id="mobile">
+  <!-- ハンバーガーメニューボタン -->
+  <button id="sidebar-toggle" class="sidebar-toggle mobile-only">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <!-- モバイルサイドバー -->
+  <div class="sidebar sidebar-mobile mobile-only">
+    <!-- モバイル：言語ボタン -->
+    <p class="sidebar-section-title" id="lang-left">Change Language</p>
+    <div class="switcher">
+  <button class="lang-switch"></button></button>
+</div>
+
+    <!-- モバイル：ナビゲーション -->
+    <p class="sidebar-section-title">Menu</p>
+    <div class="i18n"><nav class="global-nav">
+  <ul>
+    <li><a href="/en/">Top</a></li>
+    <li><a href="/en/profile">About</a></li>
+    <li><a href="/en/works">Works</a></li>
+  </ul>
+</nav>
+</div>
+    <!-- モバイル：SNSリンク -->
+    <p class="sidebar-section-title">Links</p>
+    <div class="sidebar-links"><ul class="links">
+  <li>
+    <a href="https://twitter.com/asainingen" target="_blank">Twitter(X)</a>
+  </li>
+  <li>
+    <a href="https://www.pixiv.net/users/70042496" target="_blank">Pixiv</a>
+  </li>
+  <li><a href="https://note.com/asainingen" target="_blank">Note</a></li>
+</ul>
+</div>
+  </div>
+  <!-- オーバーレイ -->
+  <div class="overlay mobile-only"></div>
+</div>
+
+
     <!-- JS読み込み -->
     <script src="/javascript/lang-switch.js"></script>
     <script src="/javascript/sidebar-toggle.js"></script>

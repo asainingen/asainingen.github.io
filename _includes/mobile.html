@@ -1,0 +1,23 @@
+<!-- モバイル -->
+<div id="mobile">
+  <!-- ハンバーガーメニューボタン -->
+  <button id="sidebar-toggle" class="sidebar-toggle mobile-only">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <!-- モバイルサイドバー -->
+  <div class="sidebar sidebar-mobile mobile-only">
+    <!-- モバイル：言語ボタン -->
+    <p class="sidebar-section-title" id="lang-left">Change Language</p>
+    {% include lang-switch.html %}
+    <!-- モバイル：ナビゲーション -->
+    <p class="sidebar-section-title">Menu</p>
+    <div class="i18n">{% include page-list.html %}</div>
+    <!-- モバイル：SNSリンク -->
+    <p class="sidebar-section-title">Links</p>
+    <div class="sidebar-links">{% include links.html %}</div>
+  </div>
+  <!-- オーバーレイ -->
+  <div class="overlay mobile-only"></div>
+</div>

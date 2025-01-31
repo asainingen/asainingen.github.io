@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const sidebar = document.querySelector(".sidebar-left");
+  const sidebar = document.querySelector(".sidebar-mobile");
   const toggleButton = document.getElementById("sidebar-toggle");
   const overlay = document.querySelector(".overlay");
 
