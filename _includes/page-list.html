@@ -1,7 +1,7 @@
 <nav class="global-nav">
   <ul>
-  {% for item in site.data.navigation %}
-    <li><a href="{{ item.link }}" {% if page.url == item.link %}class="current-page"{% endif %}>{{ item.name }}</a></li>
-  {% endfor %}
+    {% for item in site.data.navigation %}
+    <li><a href="{{ item.link }}">{{ item.name }}</a></li>
+    {% endfor %}
   </ul>
 </nav>

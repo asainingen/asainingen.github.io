@@ -1,27 +1,17 @@
 @charset "UTF-8";
 /* ウェブフォント */
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans+JP:wght@400;700&display=swap");
-/* general */
-:root {
-  --title-fontsize: 40px;
-  --main-fontsize: 20px;
-  --hr-color: #333333;
-  --bg-color: #111111;
-  --bg-rgba: rgba(17, 17, 17, 0.95);
-  --text-color: #00ee00;
-  --neon-color: #00ff00;
-}
-
+/* 変数定義 */
 .sidebar .current-page {
-  background-color: var(--text-color);
-  color: var(--bg-color);
+  background-color: #00ee00;
+  color: #111111;
 }
 
 * {
-  font-family: "Courier Prime", "IBM Plex Sans JP", monospace, sans-serif;
+  font-family: "Courier Prime", "IBM Plex Sans JP", "Roboto", monospace, sans-serif;
   font-weight: 400;
-  font-size: var(--main-fontsize);
-  color: var(--text-color);
+  font-size: 20px;
+  color: #00ee00;
 }
 
 strong {
@@ -29,8 +19,8 @@ strong {
 }
 
 p {
-  line-height: calc(var(--main-fontsize) * 1.5);
-  font-size: var(--main-fontsize);
+  line-height: 30px;
+  font-size: 20px;
   margin: auto;
 }
 
@@ -42,13 +32,13 @@ body {
   height: 100%;
   margin: 0;
   top: 0;
-  background-color: var(--bg-color);
+  background-color: #111111;
   overflow: auto;
 }
 
 a:hover {
-  color: var(--bg-color);
-  background-color: var(--text-color);
+  color: #111111;
+  background-color: #00ee00;
   animation: blinker 1.5s infinite steps(1);
 }
 
@@ -77,6 +67,9 @@ header {
   margin-top: 40px;
   position: relative;
 }
+header a {
+  text-decoration: none;
+}
 
 .sidebar-left {
   grid-area: sidebar-left;
@@ -92,6 +85,23 @@ main {
   grid-area: main-content;
   position: relative;
 }
+main a {
+  text-decoration: underline;
+  color: #00ff00;
+  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
+}
+main a p {
+  padding-left: 20px;
+}
+main ul {
+  list-style: square;
+  margin-left: 20px;
+  padding: 0;
+}
+main ul li {
+  height: 30px;
+  padding-left: 0;
+}
 
 .sidebar-right {
   grid-area: sidebar-right;
@@ -105,48 +115,40 @@ footer {
   width: 100%;
   position: sticky;
   z-index: 10;
-  background-color: var(--text-color);
-  box-shadow: 0 0 5px var(--neon-color), 0 0 10px var(--neon-color), 0 0 20px var(--neon-color);
+  background-color: #00ee00;
+  box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
 }
 
 /* common */
 /* ネオン感 */
 .neon {
-  color: var(--neon-color);
-  text-shadow: 0 0 5px var(--neon-color), 0 0 10px var(--neon-color), 0 0 20px var(--neon-color);
+  color: #00ff00;
+  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
   filter: blur(0.2px);
 }
 
 @keyframes blinker {
   0% {
-    color: var(--bg-color);
-    background-color: var(--text-color);
+    color: #111111;
+    background-color: #00ee00;
   }
   50% {
-    color: var(--text-color);
-    background-color: var(--bg-color);
+    color: #00ee00;
+    background-color: #111111;
   }
   100% {
-    color: var(--bg-color);
-    background-color: var(--text-color);
+    color: #111111;
+    background-color: #00ee00;
   }
 }
 /* parts */
 /* ヘッダー */
-header a {
-  text-decoration: none;
-}
-
 #site-title {
   margin: auto;
   text-align: center;
-  font-size: var(--title-fontsize);
-  background-color: var(--bg-color);
+  font-size: 40px;
+  background-color: #111111;
   animation: none;
-}
-
-#site-title-mobile {
-  display: none;
 }
 
 #header-nav {
@@ -154,11 +156,9 @@ header a {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
 #header-nav a {
   margin: 10px;
 }
-
 #header-nav li {
   display: inline-block;
 }
@@ -166,24 +166,23 @@ header a {
 /* フッター */
 #footer-info {
   text-align: left;
-  font-size: calc(var(--main-fontsize) / 2);
-  color: var(--bg-color);
+  font-size: 10px;
+  color: #111111;
 }
 
 /*　サイドバー */
 .sidebar {
-  font-size: var(--main-fontsize);
-  line-height: calc(var(--main-fontsize) * 1.5);
+  font-size: 20px;
+  line-height: 30px;
 }
-
 .sidebar a {
   text-decoration: none;
-  margin-left: var(--main-fontsize);
+  margin-left: 20px;
 }
 
 .sidebar-section-title {
-  font-size: var(--main-fontsize);
-  border-bottom: 2px solid var(--hr-color);
+  font-size: 20px;
+  border-bottom: 2px solid #333333;
   margin-top: 8px;
 }
 
@@ -204,42 +203,30 @@ header a {
   margin-top: 8px;
   margin-bottom: 10px;
   font-size: 16px;
-  color: var(--text-color);
-  background-color: var(--bg-color);
+  color: #00ee00;
+  background-color: #111111;
   line-height: 20px;
-  border: 2px solid var(--text-color);
+  border: 2px solid #00ee00;
   text-align: center;
 }
-
-.lang-switch:hover {
-  text-shadow: 0 0 5px var(--neon-color), 0 0 10px var(--neon-color), 0 0 20px var(--neon-color);
+.lang-switchhover {
+  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
   filter: blur(0.2px);
   animation: blinker 1.5s infinite steps(1);
-}
-
-/* main */
-main a {
-  text-decoration: underline;
-  color: var(--neon-color);
-  text-shadow: 0 0 5px var(--neon-color), 0 0 10px var(--neon-color), 0 0 20px var(--neon-color);
-}
-
-main p {
-  padding-left: var(--main-fontsize);
 }
 
 /* h要素 */
 h1 {
   text-align: center;
-  font-size: var(--title-fontsize);
+  font-size: 40px;
   margin-top: 0px;
   margin-bottom: 40px;
   font-weight: 700;
 }
 
 h2 {
-  font-size: var(--main-fontsize);
-  border-bottom: 2px solid var(--hr-color);
+  font-size: 20px;
+  border-bottom: 2px solid #333333;
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -249,17 +236,6 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-main ul {
-  list-style: square;
-  margin-left: var(--main-fontsize);
-  padding: 0;
-}
-
-main ul li {
-  height: calc(var(--main-fontsize) * 1.5);
-  padding-left: 0;
 }
 
 /* テーブル */
@@ -295,22 +271,11 @@ td {
   }
   header,
   main {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   header {
     margin-top: 20px;
-  }
-  #site-title {
-    display: none;
-  }
-  #site-title-mobile {
-    display: block;
-    margin: auto;
-    text-align: center;
-    font-size: var(--title-fontsize);
-    background-color: var(--bg-color);
-    animation: none;
   }
   #header-nav {
     display: none !important;
@@ -331,20 +296,21 @@ td {
     right: 20px;
     width: 40px;
     height: 40px;
-    background: var(--bg-color);
-    border: 2px solid var(--text-color);
+    background: #111111;
+    border: 2px solid #00ee00;
     z-index: 999;
     padding: 5px;
+    opacity: 0.8;
   }
   .sidebar-toggle span {
     display: block;
     width: 100%;
     height: 2px;
-    background-color: var(--text-color);
+    background-color: #00ee00;
     margin-top: 5px;
     margin-bottom: 5px;
   }
-  /* サイドバー */
+  /* モバイル用サイドバー */
   .sidebar-mobile {
     display: none;
     position: fixed;
@@ -353,11 +319,11 @@ td {
     width: 70%;
     max-width: 300px;
     height: 100%;
-    background-color: var(--bg-rgba);
+    background-color: rgba(17, 17, 17, 0.95);
     padding: 0px 20px 0px 40px;
     overflow-y: auto;
     z-index: 998;
-    border-left: 2px solid var(--text-color);
+    border-left: 2px solid #00ee00;
   }
   .sidebar-mobile .lang-switch {
     width: 80%;
@@ -366,11 +332,11 @@ td {
     margin-left: 10%;
     margin-right: 10%;
   }
-  .sidebar-section-title {
-    margin-top: 40px;
-  }
   .sidebar-mobile.active {
     display: block;
+  }
+  .sidebar-section-title {
+    margin-top: 40px;
   }
   /* オーバーレイ */
   .overlay {

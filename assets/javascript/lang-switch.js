@@ -1,22 +1,7 @@
 "use strict";
 
-console.log("start");
-
-const path = window.location.pathname;
-const currentLang = path.split("/")[1];
-let title = document.title;
-
-console.log(path);
-console.log(currentLang);
-console.log(title);
-
-document.documentElement.setAttribute("lang", currentLang);
-
 // 以下、日本語の時のみの処理
 if (currentLang == "ja") {
-  // サイトタイトルを日本語に変更
-  document.title = title.replace("| ASAI Hitoshi", "| 麻井均");
-
   // .i18nのリンクをjaに置換
   document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".i18n a, a.i18n").forEach((link) => {
