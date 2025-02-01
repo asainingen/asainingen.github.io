@@ -2,7 +2,7 @@
 ---
 
 // scss
-@use "variables";
-@use "font";
-@use "neon";
-@use "entrance";
+@import "/_sass/_variables.scss";
+@import "/_sass/font.scss";
+@import "/_sass/neon.scss";
+@import "/_sass/entrance.scss";
