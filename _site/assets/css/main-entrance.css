@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ウェブフォント */
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans+JP:wght@400;700&display=swap");
 /* 変数定義 */
@@ -133,3 +134,5 @@ body {
     margin-right: auto;
   }
 }
+
+/*# sourceMappingURL=main-entrance.css.map */
