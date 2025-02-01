@@ -3,3 +3,5 @@ source "https://rubygems.org"
 gem "jekyll", "~> 4.0" # Jekyllのバージョンを指定（必要に応じて変更）
 gem "bundler" # bundler自身も記述しておく
 gem 'jekyll-redirect-from'
+gem "logger"
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
