@@ -1,5 +1,7 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.0" # Jekyllのバージョンを指定（必要に応じて変更）
+gem 'jekyll', '~> 4.0' # Jekyll 4.x の最新バージョンを指定
+gem 'jekyll-sass-converter', '~> 2.0' # jekyll-sass-converter 1.5.x の最新バージョンを指定
 gem "bundler" # bundler自身も記述しておく
 gem 'jekyll-redirect-from'
+gem 'bigdecimal'

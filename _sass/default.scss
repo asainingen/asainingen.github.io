@@ -1,14 +1,10 @@
-@use "variables";
-@use "font";
-@use "neon";
-
 strong {
   font-weight: 700;
 }
 
 p {
-  line-height: calc(variables.$main-fontsize * 1.5);
-  font-size: variables.$main-fontsize;
+  line-height: calc($main-fontsize * 1.5);
+  font-size: $main-fontsize;
   margin: auto;
 }
 
@@ -21,14 +17,14 @@ body {
 }
 
 body {
-  background-color: variables.$bg-color;
+  background-color: $bg-color;
   overflow: auto;
 }
 
 a {
   &:hover {
-    color: variables.$bg-color;
-    background-color: variables.$text-color;
+    color: $bg-color;
+    background-color: $text-color;
     animation: blinker 1.5s infinite steps(1);
   }
 }
@@ -74,19 +70,19 @@ main {
   position: relative;
   a {
     text-decoration: underline;
-    color: variables.$neon-color;
-    text-shadow: 0 0 5px variables.$neon-color, 0 0 10px variables.$neon-color,
-      0 0 20px variables.$neon-color;
+    color: $neon-color;
+    text-shadow: 0 0 5px $neon-color, 0 0 10px $neon-color,
+      0 0 20px $neon-color;
     p {
-      padding-left: variables.$main-fontsize;
+      padding-left: $main-fontsize;
     }
   }
   ul {
     list-style: square;
-    margin-left: variables.$main-fontsize;
+    margin-left: $main-fontsize;
     padding: 0;
     li {
-      height: calc(variables.$main-fontsize * 1.5);
+      height: calc($main-fontsize * 1.5);
       padding-left: 0;
     }
   }
@@ -117,8 +113,8 @@ header {
 #site-title {
   margin: auto;
   text-align: center;
-  font-size: variables.$title-fontsize;
-  background-color: variables.$bg-color;
+  font-size: $title-fontsize;
+  background-color: $bg-color;
   animation: none;
 }
 
@@ -140,34 +136,34 @@ footer {
   width: 100%;
   position: sticky;
   z-index: 10;
-  background-color: variables.$text-color;
-  box-shadow: 0 0 5px variables.$neon-color, 0 0 10px variables.$neon-color,
-    0 0 20px variables.$neon-color;
+  background-color: $text-color;
+  box-shadow: 0 0 5px $neon-color, 0 0 10px $neon-color,
+    0 0 20px $neon-color;
 }
 
 #footer-info {
   text-align: left;
-  font-size: calc(variables.$main-fontsize / 2);
-  color: variables.$bg-color;
+  font-size: calc($main-fontsize / 2);
+  color: $bg-color;
 }
 
 /*　サイドバー */
 .sidebar {
-  font-size: variables.$main-fontsize;
-  line-height: calc(variables.$main-fontsize * 1.5);
+  font-size: $main-fontsize;
+  line-height: calc($main-fontsize * 1.5);
   a {
     text-decoration: none;
-    margin-left: variables.$main-fontsize;
+    margin-left: $main-fontsize;
   }
   .current-page {
-    background-color: variables.$text-color;
-    color: variables.$bg-color;
+    background-color: $text-color;
+    color: $bg-color;
   }
 }
 
 .sidebar-section-title {
-  font-size: variables.$main-fontsize;
-  border-bottom: 2px solid variables.$hr-color;
+  font-size: $main-fontsize;
+  border-bottom: 2px solid $hr-color;
   margin-top: 8px;
 }
 
@@ -188,15 +184,15 @@ footer {
   margin-top: 8px;
   margin-bottom: 10px;
   font-size: 16px;
-  color: variables.$text-color;
-  background-color: variables.$bg-color;
+  color: $text-color;
+  background-color: $bg-color;
   line-height: 20px;
-  border: 2px solid variables.$text-color;
+  border: 2px solid $text-color;
   text-align: center;
   // hover
   &:hover {
-    text-shadow: 0 0 5px variables.$neon-color, 0 0 10px variables.$neon-color,
-      0 0 20px variables.$neon-color;
+    text-shadow: 0 0 5px $neon-color, 0 0 10px $neon-color,
+      0 0 20px $neon-color;
     filter: blur(0.2px);
     animation: blinker 1.5s infinite steps(1);
   }
@@ -206,15 +202,15 @@ footer {
 
 h1 {
   text-align: center;
-  font-size: variables.$title-fontsize;
+  font-size: $title-fontsize;
   margin-top: 0px;
   margin-bottom: 40px;
   font-weight: 700;
 }
 
 h2 {
-  font-size: variables.$main-fontsize;
-  border-bottom: 2px solid variables.$hr-color;
+  font-size: $main-fontsize;
+  border-bottom: 2px solid $hr-color;
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -297,8 +293,8 @@ td {
     right: 20px;
     width: 40px;
     height: 40px;
-    background: variables.$bg-color;
-    border: 2px solid variables.$text-color;
+    background: $bg-color;
+    border: 2px solid $text-color;
     z-index: 999;
     padding: 5px;
     opacity: 0.8;
@@ -306,7 +302,7 @@ td {
       display: block;
       width: 100%;
       height: 2px;
-      background-color: variables.$text-color;
+      background-color: $text-color;
       margin-top: 5px;
       margin-bottom: 5px;
     }
@@ -321,11 +317,11 @@ td {
     width: 70%;
     max-width: 300px;
     height: 100%;
-    background-color: variables.$bg-rgba;
+    background-color: $bg-rgba;
     padding: 0px 20px 0px 40px;
     overflow-y: auto;
     z-index: 998;
-    border-left: 2px solid variables.$text-color;
+    border-left: 2px solid $text-color;
     .lang-switch {
       width: 80%;
       margin-top: 20px;

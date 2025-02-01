@@ -1,7 +1,3 @@
-@use "variables";
-@use "font";
-@use "neon";
-
 html,
 body {
   height: 100%;
@@ -12,8 +8,8 @@ body {
 
 body {
   text-align: center;
-  color: variables.$text-color;
-  background-color: variables.$bg-color;
+  color: $text-color;
+  background-color: $bg-color;
 }
 
 #lang-container {
@@ -60,15 +56,15 @@ body {
 }
 
 .lang-choice {
-  border: 1px solid variables.$text-color;
+  border: 1px solid $text-color;
   width: 200px;
   font-size: 40px;
   line-height: 20px;
   filter: blur(1px);
   &:hover {
     filter: blur(0.4px);
-    color: variables.$bg-color;
-    background-color: variables.$text-color;
+    color: $bg-color;
+    background-color: $text-color;
     animation: blinker 1.5s infinite steps(1);
   }
 }

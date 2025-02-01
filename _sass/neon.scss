@@ -1,0 +1,23 @@
+/* common */
+/* ネオン感 */
+.neon {
+  color: $neon-color;
+  text-shadow: 0 0 5px $neon-color, 0 0 10px $neon-color,
+    0 0 20px $neon-color;
+  filter: blur(0.2px);
+}
+
+@keyframes blinker {
+  0% {
+    color: $bg-color;
+    background-color: $text-color;
+  }
+  50% {
+    color: $text-color;
+    background-color: $bg-color;
+  }
+  100% {
+    color: $bg-color;
+    background-color: $text-color;
+  }
+}

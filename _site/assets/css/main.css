@@ -1,7 +1,7 @@
 @charset "UTF-8";
+/* 変数定義 */
 /* ウェブフォント */
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans+JP:wght@400;700&display=swap");
-/* 変数定義 */
 * {
   font-family: "Courier Prime", "IBM Plex Sans JP", "Roboto", monospace, sans-serif;
   font-weight: 400;
@@ -31,12 +31,13 @@
     background-color: #00ee00;
   }
 }
+
 strong {
   font-weight: 700;
 }
 
 p {
-  line-height: 30px;
+  line-height: calc($main-fontsize * 1.5);
   font-size: 20px;
   margin: auto;
 }
@@ -97,21 +98,25 @@ main {
   grid-area: main-content;
   position: relative;
 }
+
 main a {
   text-decoration: underline;
   color: #00ff00;
   text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
 }
+
 main a p {
   padding-left: 20px;
 }
+
 main ul {
   list-style: square;
   margin-left: 20px;
   padding: 0;
 }
+
 main ul li {
-  height: 30px;
+  height: calc($main-fontsize * 1.5);
   padding-left: 0;
 }
 
@@ -132,6 +137,7 @@ header {
   margin-top: 40px;
   position: relative;
 }
+
 header a {
   text-decoration: none;
 }
@@ -149,9 +155,11 @@ header a {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 #header-nav a {
   margin: 10px;
 }
+
 #header-nav li {
   display: inline-block;
 }
@@ -168,19 +176,21 @@ footer {
 
 #footer-info {
   text-align: left;
-  font-size: 10px;
+  font-size: calc($main-fontsize / 2);
   color: #111111;
 }
 
 /*　サイドバー */
 .sidebar {
   font-size: 20px;
-  line-height: 30px;
+  line-height: calc($main-fontsize * 1.5);
 }
+
 .sidebar a {
   text-decoration: none;
   margin-left: 20px;
 }
+
 .sidebar .current-page {
   background-color: #00ee00;
   color: #111111;
@@ -215,6 +225,7 @@ footer {
   border: 2px solid #00ee00;
   text-align: center;
 }
+
 .lang-switch:hover {
   text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
   filter: blur(0.2px);
@@ -260,6 +271,7 @@ td {
     display: none;
   }
 }
+
 /* スマートフォン対応 */
 @media (max-width: 768px) {
   .container {
@@ -276,7 +288,7 @@ td {
     width: 100%;
   }
   header,
-  main {
+main {
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -291,7 +303,7 @@ td {
     margin-bottom: 40px;
   }
   .sidebar-left,
-  .sidebar-right {
+.sidebar-right {
     display: none;
   }
   /* ハンバーガーメニューボタン */
@@ -357,4 +369,4 @@ td {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
