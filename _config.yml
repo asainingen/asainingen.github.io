@@ -30,6 +30,8 @@ github_username:
 remote_theme:
 plugins:
   - jekyll-redirect-from
+sass:
+  sass_dir: _sass
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

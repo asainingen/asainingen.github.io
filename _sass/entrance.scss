@@ -1,36 +1,7 @@
-@charset "UTF-8";
-/* ウェブフォント */
-@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans+JP:wght@400;700&display=swap");
-/* 変数定義 */
-* {
-  font-family: "Courier Prime", "IBM Plex Sans JP", "Roboto", monospace, sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  color: #00ee00;
-}
+@use "variables";
+@use "../_sass/font";
+@use "../_sass/neon";
 
-/* common */
-/* ネオン感 */
-.neon {
-  color: #00ff00;
-  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
-  filter: blur(0.2px);
-}
-
-@keyframes blinker {
-  0% {
-    color: #111111;
-    background-color: #00ee00;
-  }
-  50% {
-    color: #00ee00;
-    background-color: #111111;
-  }
-  100% {
-    color: #111111;
-    background-color: #00ee00;
-  }
-}
 html,
 body {
   height: 100%;
@@ -41,22 +12,24 @@ body {
 
 body {
   text-align: center;
-  color: #00ee00;
-  background-color: #111111;
+  color: variables.$text-color;
+  background-color: variables.$bg-color;
 }
 
 #lang-container {
   display: grid;
-  grid-template-areas: "title title" "english japanese";
+  grid-template-areas:
+    "title title"
+    "english japanese";
   grid-template-rows: 440px auto;
   grid-template-columns: auto auto;
   grid-gap: 0px;
   height: 100vh;
   overflow: hidden;
-}
-#lang-container a {
-  display: block;
-  text-decoration: none;
+  a {
+    display: block;
+    text-decoration: none;
+  }
 }
 
 #main-title {
@@ -67,9 +40,9 @@ body {
   padding-right: 100px;
   font-size: 120px;
   filter: blur(1px);
-}
-#main-title:hover {
-  filter: blur(0.4px);
+  &:hover {
+    filter: blur(0.4px);
+  }
 }
 
 #english {
@@ -87,17 +60,17 @@ body {
 }
 
 .lang-choice {
-  border: 1px solid #00ee00;
+  border: 1px solid variables.$text-color;
   width: 200px;
   font-size: 40px;
   line-height: 20px;
   filter: blur(1px);
-}
-.lang-choice:hover {
-  filter: blur(0.4px);
-  color: #111111;
-  background-color: #00ee00;
-  animation: blinker 1.5s infinite steps(1);
+  &:hover {
+    filter: blur(0.4px);
+    color: variables.$bg-color;
+    background-color: variables.$text-color;
+    animation: blinker 1.5s infinite steps(1);
+  }
 }
 
 @media (max-height: 650px) {
@@ -115,6 +88,7 @@ body {
     margin-bottom: 200px;
   }
 }
+
 @media (max-width: 768px) {
   #main-title {
     display: none;
@@ -125,14 +99,14 @@ body {
     grid-template-rows: 1fr 2fr 2fr;
     grid-template-columns: auto;
   }
+
   #english {
     margin-left: auto;
     margin-right: auto;
   }
+
   #japanese {
     margin-left: auto;
     margin-right: auto;
   }
 }
-
-/*# sourceMappingURL=entrance.css.map */

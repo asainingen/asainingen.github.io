@@ -1,0 +1,25 @@
+@use "variables";
+
+/* common */
+/* ネオン感 */
+.neon {
+  color: variables.$neon-color;
+  text-shadow: 0 0 5px variables.$neon-color, 0 0 10px variables.$neon-color,
+    0 0 20px variables.$neon-color;
+  filter: blur(0.2px);
+}
+
+@keyframes blinker {
+  0% {
+    color: variables.$bg-color;
+    background-color: variables.$text-color;
+  }
+  50% {
+    color: variables.$text-color;
+    background-color: variables.$bg-color;
+  }
+  100% {
+    color: variables.$bg-color;
+    background-color: variables.$text-color;
+  }
+}

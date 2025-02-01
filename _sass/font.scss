@@ -1,0 +1,12 @@
+@use "variables";
+
+/* ウェブフォント */
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans+JP:wght@400;700&display=swap");
+
+* {
+  font-family: "Courier Prime", "IBM Plex Sans JP", "Roboto", monospace,
+    sans-serif;
+  font-weight: 400;
+  font-size: variables.$main-fontsize;
+  color: variables.$text-color;
+}
