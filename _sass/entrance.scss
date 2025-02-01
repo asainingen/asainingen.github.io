@@ -73,6 +73,7 @@ body {
   }
 }
 
+// 縦が狭い場合
 @media (max-height: 650px) {
   #main-title {
     display: none;
@@ -89,6 +90,7 @@ body {
   }
 }
 
+// モバイル
 @media (max-width: 768px) {
   #main-title {
     display: none;
@@ -99,12 +101,10 @@ body {
     grid-template-rows: 1fr 2fr 2fr;
     grid-template-columns: auto;
   }
-
   #english {
     margin-left: auto;
     margin-right: auto;
   }
-
   #japanese {
     margin-left: auto;
     margin-right: auto;
