@@ -57,7 +57,6 @@ body {
 }
 
 #lang-container a {
-  display: block;
   text-decoration: none;
 }
 
@@ -99,9 +98,12 @@ body {
 
 .lang-choice:hover {
   filter: blur(0.4px);
-  color: #111111;
   background-color: #00ee00;
-  animation: blinker 1.5s infinite steps(1);
+}
+
+.lang-choice:hover .en,
+.lang-choice:hover .ja {
+  color: #111111;
 }
 
 @media (max-height: 650px) {

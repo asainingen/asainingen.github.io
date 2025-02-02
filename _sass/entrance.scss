@@ -23,7 +23,6 @@ body {
   height: 100vh;
   overflow: hidden;
   a {
-    display: block;
     text-decoration: none;
   }
 }
@@ -63,9 +62,11 @@ body {
   filter: blur(1px);
   &:hover {
     filter: blur(0.4px);
-    color: $bg-color;
     background-color: $text-color;
-    animation: blinker 1.5s infinite steps(1);
+    .en,
+    .ja {
+      color: $bg-color;
+    }
   }
 }
 
