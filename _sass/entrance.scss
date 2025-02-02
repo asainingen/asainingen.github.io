@@ -21,10 +21,11 @@ body {
   grid-template-columns: auto auto;
   grid-gap: 0px;
   height: 100vh;
-  overflow: hidden;
+  width: 100vw;
   a {
     text-decoration: none;
   }
+  place-items: center;
 }
 
 #main-title {
@@ -40,16 +41,22 @@ body {
   }
 }
 
+#english,
+#japanese {
+  font-size: 100px;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+}
+
 #english {
   grid-area: english;
-  font-size: 100px;
   margin-left: auto;
   margin-right: 60px;
 }
 
 #japanese {
   grid-area: japanese;
-  font-size: 100px;
   margin-left: 60px;
   margin-right: auto;
 }
@@ -58,6 +65,7 @@ body {
   border: 1px solid $text-color;
   width: 200px;
   font-size: 40px;
+  height: 100px;
   line-height: 20px;
   filter: blur(1px);
   &:hover {
@@ -80,10 +88,8 @@ body {
     grid-template-areas: "english japanese";
     grid-template-rows: auto;
     grid-template-columns: auto auto;
-  }
-  .lang-choice {
-    margin-top: 200px;
-    margin-bottom: 200px;
+    place-content: center;
+    place-items: center;
   }
 }
 
@@ -94,16 +100,13 @@ body {
   }
   #lang-container {
     display: grid;
-    grid-template-areas: "." "english" "japanese";
-    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-areas: "english" "japanese";
+    grid-template-rows: 50vh 50vh;
     grid-template-columns: auto;
+    place-items: center;
+
   }
-  #english {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #japanese {
-    margin-left: auto;
-    margin-right: auto;
-  }
+  #english,#japanese {
+    margin: auto;
+    }
 }
