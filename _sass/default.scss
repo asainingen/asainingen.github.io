@@ -3,7 +3,7 @@ strong {
 }
 
 p {
-  line-height: calc($main-fontsize * 1.5);
+  line-height: $main-fontsize * 1.5;
   font-size: $main-fontsize;
   margin: auto;
 }
@@ -82,7 +82,7 @@ main {
     margin-left: $main-fontsize;
     padding: 0;
     li {
-      height: calc($main-fontsize * 1.5);
+      height: $main-fontsize * 1.5;
       padding-left: 0;
     }
   }
@@ -143,14 +143,14 @@ footer {
 
 #footer-info {
   text-align: left;
-  font-size: calc($main-fontsize / 2);
+  font-size: $main-fontsize / 2;
   color: $bg-color;
 }
 
 /*　サイドバー */
 .sidebar {
   font-size: $main-fontsize;
-  line-height: calc($main-fontsize * 1.5);
+  line-height: $main-fontsize * 1.5;
   a {
     text-decoration: none;
     margin-left: $main-fontsize;

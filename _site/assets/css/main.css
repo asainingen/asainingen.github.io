@@ -37,7 +37,7 @@ strong {
 }
 
 p {
-  line-height: calc($main-fontsize * 1.5);
+  line-height: 30px;
   font-size: 20px;
   margin: auto;
 }
@@ -116,7 +116,7 @@ main ul {
 }
 
 main ul li {
-  height: calc($main-fontsize * 1.5);
+  height: 30px;
   padding-left: 0;
 }
 
@@ -176,14 +176,14 @@ footer {
 
 #footer-info {
   text-align: left;
-  font-size: calc($main-fontsize / 2);
+  font-size: 10px;
   color: #111111;
 }
 
 /*　サイドバー */
 .sidebar {
   font-size: 20px;
-  line-height: calc($main-fontsize * 1.5);
+  line-height: 30px;
 }
 
 .sidebar a {
