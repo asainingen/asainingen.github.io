@@ -22,10 +22,10 @@ body {
   grid-gap: 0px;
   height: 100vh;
   width: 100vw;
+  place-items: center;
   a {
     text-decoration: none;
   }
-  place-items: center;
 }
 
 #main-title {
@@ -83,12 +83,12 @@ body {
   #main-title {
     display: none;
   }
+  
   #lang-container {
     display: grid;
     grid-template-areas: "english japanese";
     grid-template-rows: auto;
     grid-template-columns: auto auto;
-    place-content: center;
     place-items: center;
   }
 }
@@ -104,9 +104,9 @@ body {
     grid-template-rows: 50vh 50vh;
     grid-template-columns: auto;
     place-items: center;
-
   }
-  #english,#japanese {
+  #english,
+  #japanese {
     margin: auto;
-    }
+  }
 }

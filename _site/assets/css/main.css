@@ -75,7 +75,7 @@ button {
   grid-template-rows: 140px auto 10px;
   grid-template-columns: 200px auto 200px;
   grid-gap: 40px;
-  height: 99.9vh;
+  min-height: 99.9vh;
   position: relative;
   filter: blur(0.3px);
 }
@@ -122,8 +122,12 @@ main ul li {
 
 .sidebar-right {
   grid-area: sidebar-right;
-  position: sticky;
   padding-right: 40px;
+  position: sticky;
+  width: auto;
+  height: fit-content;
+  top: 0;
+  align-self: start;
 }
 
 #default-footer {

@@ -46,7 +46,7 @@ button {
   grid-template-rows: 140px auto 10px;
   grid-template-columns: 200px auto 200px;
   grid-gap: 40px;
-  height: 99.9vh;
+  min-height: 99.9vh;
   position: relative;
   filter: blur(0.3px);
 }
@@ -71,8 +71,7 @@ main {
   a {
     text-decoration: underline;
     color: $neon-color;
-    text-shadow: 0 0 5px $neon-color, 0 0 10px $neon-color,
-      0 0 20px $neon-color;
+    text-shadow: 0 0 5px $neon-color, 0 0 10px $neon-color, 0 0 20px $neon-color;
     p {
       padding-left: $main-fontsize;
     }
@@ -90,8 +89,12 @@ main {
 
 .sidebar-right {
   grid-area: sidebar-right;
-  position: sticky;
   padding-right: 40px;
+  position: sticky;
+  width: auto;
+  height: fit-content;
+  top: 0;
+  align-self: start;
 }
 
 #default-footer {
@@ -137,8 +140,7 @@ footer {
   position: sticky;
   z-index: 10;
   background-color: $text-color;
-  box-shadow: 0 0 5px $neon-color, 0 0 10px $neon-color,
-    0 0 20px $neon-color;
+  box-shadow: 0 0 5px $neon-color, 0 0 10px $neon-color, 0 0 20px $neon-color;
 }
 
 #footer-info {
@@ -191,8 +193,7 @@ footer {
   text-align: center;
   // hover
   &:hover {
-    text-shadow: 0 0 5px $neon-color, 0 0 10px $neon-color,
-      0 0 20px $neon-color;
+    text-shadow: 0 0 5px $neon-color, 0 0 10px $neon-color, 0 0 20px $neon-color;
     filter: blur(0.2px);
     animation: blinker 1.5s infinite steps(1);
   }
