@@ -32,6 +32,11 @@
   }
 }
 
+.opposite {
+  color: #111111;
+  background-color: #00ee00;
+}
+
 html,
 body {
   height: 100%;

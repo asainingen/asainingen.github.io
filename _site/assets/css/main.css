@@ -32,6 +32,11 @@
   }
 }
 
+.opposite, .nowpage {
+  color: #111111;
+  background-color: #00ee00;
+}
+
 strong {
   font-weight: 700;
 }
@@ -270,6 +275,7 @@ td {
   vertical-align: top;
 }
 
+/* nowpage */
 @media (min-width: 769px) {
   #mobile {
     display: none;
