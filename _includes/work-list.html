@@ -1,0 +1,18 @@
+{% assign scripts = include.works | where: "type", include.work_type %}
+
+{% if scripts.size > 0 %}
+  <ul>
+    {% for work in scripts %}
+      <li>
+        {{ work.date | date: "%Y/%m/%d" }}
+        {% if work.link %}
+          <a href="{{ work.link }}">{{ work.title }}</a>
+        {% else %}
+          {{ work.title }}
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>None.</p>
+{% endif %}

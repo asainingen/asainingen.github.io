@@ -36,6 +36,11 @@ button {
   cursor: pointer;
 }
 
+/* 適応除外not-neonクラス */
+.not-neon a {
+  text-shadow: none;
+}
+
 /* グリッドレイアウト */
 .container {
   display: grid;
@@ -81,7 +86,7 @@ main {
     margin-left: $main-fontsize;
     padding: 0;
     li {
-      height: $main-fontsize * 1.5;
+      line-height: $main-fontsize * 1.5;
       padding-left: 0;
     }
   }
@@ -216,12 +221,32 @@ h2 {
   margin-bottom: 10px;
 }
 
+h3 {
+  font-size: $main-fontsize;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: $main-fontsize*1.5;
+  &::before {
+    content: "◆";
+    display: inline-block;
+    color: $hr-color;
+    line-height: $main-fontsize*1.5;
+    vertical-align: middle;
+    font-size: $main-fontsize/2;
+    margin-right: $main-fontsize/2;
+  }
+}
+
 /* リスト */
 
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.not-list li {
+  list-style: none;
 }
 
 /* テーブル */

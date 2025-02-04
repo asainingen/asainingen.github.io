@@ -73,6 +73,11 @@ button {
   cursor: pointer;
 }
 
+/* 適応除外not-neonクラス */
+.not-neon a {
+  text-shadow: none;
+}
+
 /* グリッドレイアウト */
 .container {
   display: grid;
@@ -121,7 +126,7 @@ main ul {
 }
 
 main ul li {
-  height: 30px;
+  line-height: 30px;
   padding-left: 0;
 }
 
@@ -257,11 +262,32 @@ h2 {
   margin-bottom: 10px;
 }
 
+h3 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: 30px;
+}
+
+h3::before {
+  content: "◆";
+  display: inline-block;
+  color: #333333;
+  line-height: 30px;
+  vertical-align: middle;
+  font-size: 10px;
+  margin-right: 10px;
+}
+
 /* リスト */
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.not-list li {
+  list-style: none;
 }
 
 /* テーブル */

@@ -2,8 +2,7 @@
 /* ネオン感 */
 .neon {
   color: $neon-color;
-  text-shadow: 0 0 5px $neon-color, 0 0 10px $neon-color,
-    0 0 20px $neon-color;
+  text-shadow: 0 0 5px $neon-color, 0 0 10px $neon-color, 0 0 20px $neon-color;
   filter: blur(0.2px);
 }
 

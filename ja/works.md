@@ -1,41 +1,41 @@
 ---
 layout: default
-title: Works
+title: 作品リスト
 ---
 
-# Works List
+# 作品リスト
 
-## Publications (Doujinshi)
+## 同人誌
 
-### Solo Works
+### 個人
 <div class="not-neon not-list">
 {% include work-list.html works=site.data.works work_type="本" %}
 </div>
 
-### Group
+### サークル
 <div class="not-neon not-list">
 {% include work-list.html works=site.data.works work_type="雑誌" %}
 </div>
 
-## Novels
+## 小説
 
 <div class="not-neon not-list">
 {% include work-list.html works=site.data.works work_type="小説" %}
 </div>
 
-## Articles
+## 論考
 
 <div class="not-neon not-list">
 {% include work-list.html works=site.data.works work_type="論考" %}
 </div>
 
-## Essays
+## エッセイ
 
 <div class="not-neon not-list">
 {% include work-list.html works=site.data.works work_type="エッセイ" %}
 </div>
 
-## Scripts
+## 脚本
 
 <div class="not-neon not-list">
 {% include work-list.html works=site.data.works work_type="脚本" %}
