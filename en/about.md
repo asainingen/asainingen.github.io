@@ -19,9 +19,16 @@ He is a student of Waseda University.
 
 ## Interests
 
-Science fiction (Sci-Fi), aspects of love in contemporary and future society, social norms in the age of information technology.
+### Themes
+- Science fiction (Sci-Fi)
+- Aspects of love in contemporary and future society
+- Social norms in the age of information technology.
 
-Information Sciences, Philosophy of Information, Library and Information Sciences, Archival Science.
+### Disciplines
+- Information Sciences
+- Philosophy of Information
+- Library and Information Sciences
+- Archival Science.
 
 ## Works
 
