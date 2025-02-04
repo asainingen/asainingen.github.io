@@ -9,7 +9,7 @@ title: Top
 
 This is a personal website of ASAI Hitoshi.
 
-About me, check [profile page](./profile).
+About me, check [profile page](./about).
 
 If you want to check my group, visit [Half-Create's website](https://half-create.org).
 
