@@ -22,13 +22,13 @@ He is a student of Waseda University.
 ### Themes
 - Science fiction (Sci-Fi)
 - Aspects of love in contemporary and future society
-- Social norms in the age of information technology.
+- Social norms in the age of information technology
 
 ### Disciplines
 - Information Sciences
 - Philosophy of Information
 - Library and Information Sciences
-- Archival Science.
+- Archival Science
 
 ## Works
 
