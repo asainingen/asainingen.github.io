@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 作品リスト
+lang: ja
 ---
 
 # 作品リスト

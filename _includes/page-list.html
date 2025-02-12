@@ -1,7 +1,10 @@
 <nav class="global-nav">
   <ul>
     {% for item in site.data.navigation %}
-    <li><a href="{{ item.link }}">{{ item.name }}</a></li>
+    <li><a href="{% if page.lang == "en" %}{{ item.link_en }}{% else %}{{ item.link_ja }}{% endif %}">
+      {% if page.lang == "en" or include.place == "header" %}{{ item.name_en }}
+      {% else %}{{ item.name_ja }}{% endif %}
+    </a></li>
     {% endfor %}
   </ul>
 </nav>

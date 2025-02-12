@@ -1,6 +1,7 @@
 ---
 layout: default
 title: トップページ
+lang: ja
 ---
 
 # 麻井均個人サイト

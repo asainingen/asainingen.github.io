@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Profile
+lang: en
 ---
 
 # ASAI Hitoshi

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{page.lang}}">
   <head>
     <meta charset="utf-8" />
     <title>{{page.title}} | ASAI Hitoshi</title>
@@ -7,7 +7,6 @@
     <meta name="author" content="麻井均" />
     <link rel="stylesheet" href="/assets/css/main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="/assets/javascript/lang-head.js"></script>
   </head>
 
   <body>
@@ -22,7 +21,7 @@
         </div>
         <!-- ヘッダーナビゲーション -->
         <div id="header-nav" class="neon i18n">
-          {% include page-list.html %}
+          {% include page-list.html place="header" %}
         </div>
       </header>
       <!-- 左サイドバー -->
@@ -51,7 +50,6 @@
     {% include mobile.html %}
 
     <!-- JS読み込み -->
-    <script src="/assets/javascript/lang-switch.js"></script>
     <script src="/assets/javascript/sidebar-toggle.js"></script>
     <script src="/assets/javascript/nowplace.js"></script>
   </body>

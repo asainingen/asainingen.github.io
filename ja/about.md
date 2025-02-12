@@ -1,9 +1,10 @@
 ---
 layout: default
 title: プロフィール
+lang: ja
 ---
 
-# 麻井均
+# プロフィール
 
 ## 概要
 

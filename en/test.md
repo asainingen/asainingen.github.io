@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Test
+lang: en
 ---
 
 # Welcome to ASAI Hitoshi's Website

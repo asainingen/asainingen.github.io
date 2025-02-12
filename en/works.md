@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Works
+lang: en
 ---
 
 # Works List

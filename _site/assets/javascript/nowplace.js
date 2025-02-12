@@ -1,14 +1,16 @@
 "use strict";
 
+const path = window.location.pathname;
+
 document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.querySelectorAll(".sidebar a");
-  if (navLinks.length > 0) {
-    for (let navLink of navLinks) {
-      if (navLink.getAttribute("href") == path) {
-        console.log(navLink);
-        console.log(path);
-        navLink.classList.add("nowpage");
-      }
+  console.log(navLinks);
+  for (let navLink of navLinks) {
+    console.log(navLink.getAttribute("href"));
+    console.log("path= " + path);
+    if (navLink.getAttribute("href") == path) {
+      console.log("icchi");
+      navLink.classList.add("nowpage");
     }
   }
 });
