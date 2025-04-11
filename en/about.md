@@ -10,7 +10,7 @@ lang: en
 
 ASAI Hitoshi (麻井均) is Japanese novelist.
 
-He is a student of Waseda University.
+He is a graduate student of Kyoto University.
 
 ## Affiliation
 
