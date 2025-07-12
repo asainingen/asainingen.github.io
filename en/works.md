@@ -41,3 +41,9 @@ lang: en
 <div class="not-neon not-list">
 {% include work-list.html works=site.data.works work_type="脚本" %}
 </div>
+
+## Interviews
+
+<div class="not-neon not-list">
+{% include work-list.html works=site.data.works work_type="インタビュー" %}
+</div>
