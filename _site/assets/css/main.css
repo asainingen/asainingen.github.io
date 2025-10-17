@@ -88,7 +88,7 @@ button {
   grid-template-rows: 140px auto 10px;
   grid-template-columns: 200px auto 200px;
   grid-gap: 40px;
-  min-height: 99vh;
+  min-height: 100vh;
   position: relative;
   filter: blur(0.3px);
 }
@@ -194,6 +194,7 @@ footer {
   margin: 0 0 0 0;
   padding: 0;
   box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
+  line-height: 10px;
 }
 
 #footer-info {
@@ -203,6 +204,7 @@ footer {
   color: #111111;
   margin: 0 0 0 0;
   padding: 0 0 0 10px;
+  line-height: 10px;
 }
 
 /*　サイドバー */
