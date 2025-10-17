@@ -3,16 +3,30 @@
 {% if scripts.size > 0 %}
   <ul>
     {% for work in scripts %}
-      <li>
-        {{ work.date | date: "%Y/%m/%d" }}
-        {% if work.link %}
-          <a href="{{ work.link }}">{{ work.title }}</a>
+      <li class="work">
+        <div class="work_date">
+        {% if work.date.size > 0 %}
+          {{ work.date | date: "%Y/%m/%d" }}
         {% else %}
-          {{ work.title }}
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         {% endif %}
+        </div>
+        <br class="mobile_only"/>
+        <div class="work_title">
+        {% if work.link %}
+          <div class="work_title_original"><a href="{{ work.link }}">{{ work.title }}</a><br /></div>
+          <div class="work_title_translated en_only"><a href="{{ work.link }}">{{ work.translatedTitle }}</a><br /></div>
+          <div class="work_title_translated ja_only opposite">{{ work.translatedTitle }}<br /></div>
+        {% else %}
+          <div class="work_title_original">{{ work.title }}<br /></div>
+          <div class="work_title_translated en_only">{{ work.translatedTitle }}<br /></div>
+          <div class="work_title_translated ja_only opposite">{{ work.translatedTitle }}<br /></div>
+        {% endif %}
+          <div class="work_title_romanized opposite">{{ work.romanizedTitle }}</div>
+        </div>
       </li>
     {% endfor %}
   </ul>
 {% else %}
-  <p>None.</p>
+  None.
 {% endif %}

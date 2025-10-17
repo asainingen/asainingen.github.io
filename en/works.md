@@ -6,14 +6,17 @@ lang: en
 
 # Works List
 
+
 ## Publications (Doujinshi)
 
-### Solo Works
+### Solo Work
+
 <div class="not-neon not-list">
 {% include work-list.html works=site.data.works work_type="本" %}
 </div>
 
-### Group
+### Co-producted Work
+
 <div class="not-neon not-list">
 {% include work-list.html works=site.data.works work_type="雑誌" %}
 </div>
@@ -36,13 +39,13 @@ lang: en
 {% include work-list.html works=site.data.works work_type="エッセイ" %}
 </div>
 
-## Scripts
+## Script
 
 <div class="not-neon not-list">
 {% include work-list.html works=site.data.works work_type="脚本" %}
 </div>
 
-## Interviews
+## Interview
 
 <div class="not-neon not-list">
 {% include work-list.html works=site.data.works work_type="インタビュー" %}

@@ -7,6 +7,12 @@ p {
   font-size: $main-fontsize;
   margin: auto;
 }
+:lang(ja) {
+  p {
+    font-size: $main-fontsize * 0.9;
+    padding-top: 0.1rem;
+  }
+}
 
 html,
 body {
@@ -19,14 +25,21 @@ body {
 body {
   background-color: $bg-color;
   overflow: auto;
+  line-height: $main-fontsize * 1.5;
 }
 
-a {
-  &:hover {
-    color: $bg-color;
-    background-color: $text-color;
-    animation: blinker 1.5s infinite steps(1);
-  }
+.blinker {
+  color: $bg-color;
+  background-color: $text-color;
+  animation: blinker 1.5s infinite steps(1);
+}
+
+.blink:hover {
+  @extend .blinker;
+}
+
+a:hover {
+  @extend .blinker;
 }
 
 button {
@@ -51,7 +64,7 @@ button {
   grid-template-rows: 140px auto 10px;
   grid-template-columns: 200px auto 200px;
   grid-gap: 40px;
-  min-height: 99.9vh;
+  min-height: 99vh;
   position: relative;
   filter: blur(0.3px);
 }
@@ -73,10 +86,12 @@ button {
 main {
   grid-area: main-content;
   position: relative;
+  margin-left: $main-fontsize;
   a {
     text-decoration: underline;
     color: $neon-color;
-    text-shadow: 0 0 5px $neon-color, 0 0 10px $neon-color, 0 0 20px $neon-color;
+    text-shadow: 0 0 2.5px $neon-color, 0 0 5px $neon-color,
+      0 0 10px $neon-color;
     p {
       padding-left: $main-fontsize;
     }
@@ -84,10 +99,14 @@ main {
   ul {
     list-style: square;
     margin-left: $main-fontsize;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
     padding: 0;
     li {
       line-height: $main-fontsize * 1.5;
-      padding-left: 0;
+      margin: 0;
+      padding: 0;
     }
   }
 }
@@ -140,18 +159,21 @@ header {
 
 /* フッター */
 footer {
-  top: 100vh;
   width: 100%;
-  position: sticky;
   z-index: 10;
   background-color: $text-color;
+  margin: 0 0 0 0;
+  padding: 0;
   box-shadow: 0 0 5px $neon-color, 0 0 10px $neon-color, 0 0 20px $neon-color;
 }
 
 #footer-info {
+  display: inline;
   text-align: left;
-  font-size: $main-fontsize / 2;
+  font-size: 10px;
   color: $bg-color;
+  margin: 0 0 0 0;
+  padding: 0 0 0 10px;
 }
 
 /*　サイドバー */
@@ -200,7 +222,7 @@ footer {
   &:hover {
     text-shadow: 0 0 5px $neon-color, 0 0 10px $neon-color, 0 0 20px $neon-color;
     filter: blur(0.2px);
-    animation: blinker 1.5s infinite steps(1);
+    @extend .blinker;
   }
 }
 
@@ -210,31 +232,49 @@ h1 {
   text-align: center;
   font-size: $title-fontsize;
   margin-top: 0px;
+  margin-left: -$main-fontsize;
   margin-bottom: 40px;
   font-weight: 700;
+  line-height: 2em;
+  &::before {
+    content: "#";
+    color: $hr-color;
+    margin-left: -1.5em;
+    padding-right: 0.3em;
+  }
 }
 
 h2 {
-  font-size: $main-fontsize;
+  display: block;
   border-bottom: 2px solid $hr-color;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-left: -$main-fontsize;
+  &::before {
+    content: "##";
+    color: $hr-color;
+    margin-left: -1.5em;
+    padding-right: 0.3em;
+  }
 }
 
 h3 {
+  display: inline-block;
   font-size: $main-fontsize;
-  margin-top: 20px;
+  border-bottom: 1px solid $hr-color;
+  margin-left: -$main-fontsize;
+  margin-top: 10px;
   margin-bottom: 10px;
-  line-height: $main-fontsize*1.5;
   &::before {
-    content: "◆";
-    display: inline-block;
+    content: "###";
     color: $hr-color;
-    line-height: $main-fontsize*1.5;
-    vertical-align: middle;
-    font-size: $main-fontsize/2;
-    margin-right: $main-fontsize/2;
+    margin-left: -2.1em;
+    padding-right: 0.3em;
+    font-size: 0.7em;
   }
+}
+
+h2 + h3 {
+  margin-top: 0px;
 }
 
 /* リスト */
@@ -247,6 +287,7 @@ ul {
 
 .not-list li {
   list-style: none;
+  margin-left: -1em;
 }
 
 /* テーブル */
@@ -271,7 +312,69 @@ td {
   }
 }
 
+// /works
+:lang(en) {
+  .work_title_original {
+    display: none;
+  }
+  .work_title_translated {
+    display: inline;
+  }
+  .work_title_romanized {
+    display: inline;
+    font-size: 0.7em;
+  }
+  .ja_only {
+    display: none;
+  }
+}
+
+:lang(ja) {
+  .work_title_original {
+    display: inline;
+  }
+  .work_title_romanized {
+    display: none;
+  }
+  .work_title_translated {
+    display: inline;
+    font-size: 0.7em;
+  }
+  .en_only {
+    display: none;
+  }
+}
+
+.works_list {
+  h3 {
+    margin-bottom: 0;
+  }
+}
+
+.work {
+  display: block;
+  text-indent: -6.6rem;
+  padding-left: 6.6rem;
+  margin-top: 1rem;
+  line-height: 1rem;
+  h3 {
+    margin-bottom: 0;
+  }
+}
+
+.work_date {
+  display: inline;
+}
+
+.work_title {
+  display: inline;
+  width: 100%;
+}
+
 /* スマートフォン対応 */
+.mobile_only {
+  display: none;
+}
 
 @media (max-width: 768px) {
   .container {
@@ -294,8 +397,8 @@ td {
 
   header,
   main {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   header {
@@ -379,5 +482,32 @@ td {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 997;
+  }
+
+  .work {
+    text-indent: 0em;
+    padding-left: 0em;
+  }
+
+  .work_date {
+    display: block;
+    margin-top: 0;
+    margin-left: -1rem;
+    margin-bottom: -10px;
+  }
+
+  .work_title_romanized {
+    display: block;
+    margin-left: 0rem;
+  }
+  .work_title_translated {
+    display: block;
+  }
+
+  .mobile_only {
+    display: inline;
+  }
+  .pc_only {
+    display: none;
   }
 }

@@ -10,15 +10,17 @@ lang: ja
 
 麻井均（あさい・ひとし）
 
-京都大学大学院在学
+京都大学大学院在学。
 
 主に小説・評論を書く。
 
 ## 所属サークル
 
-[半知半会](https://half-create.org)
+- [半知半会](https://half-create.org)
 
-[早稲田大学VTuber研究会](https://waseda.vken.org)
+- [早稲田大学VTuber研究会](https://waseda.vken.org)
+
+- [京都大学SF・幻想文学研究会](https://x.com/KUSFA)
 
 ## 興味・関心
 

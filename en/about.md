@@ -14,9 +14,11 @@ He is a graduate student of Kyoto University.
 
 ## Affiliation
 
-[Half Create](https://half-create.org)
+- [Half Create](https://half-create.org)
 
-[Waseda VTuber Society](https://waseda.vken.org)
+- [Waseda VTuber Society](https://waseda.vken.org)
+
+- [KUFSA: Kyoto University Sci-Fi Association](https://x.com/KUSFA)
 
 ## Interests
 

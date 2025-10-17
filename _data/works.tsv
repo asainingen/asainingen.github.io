@@ -1,22 +1,22 @@
-author	type	long	medium	date	title	first	link	placement	event	記事再録・雑誌再販	備考
-麻井均	脚本		未公開		存在の耐えられない重さ						
-麻井均	小説	短編	Web	2021/7/12	百分の一の救済	Pixiv	https://www.pixiv.net/novel/show.php?id=15596777	https://www.pixiv.net/novel/show.php?id=15596777			悲しき亜熱帯2
-麻井均	小説	短編	Web	2021/7/7	雄星より愛をこめて	Pixiv	https://www.pixiv.net/novel/show.php?id=15561843	https://www.pixiv.net/novel/show.php?id=15561843		反仮想体 1	悲しき亜熱帯1
-麻井均	小説	短編	Web	2021/8/26	二人だけの閉じた生温い空間	Pixiv	https://www.pixiv.net/novel/show.php?id=15889772	https://www.pixiv.net/novel/show.php?id=15889772			悲しき亜熱帯3
-麻井均	小説	短編	Web	2021/10/24	電書鳩	Pixiv	https://www.pixiv.net/novel/show.php?id=16284035	https://www.pixiv.net/novel/show.php?id=16284035			
-麻井均	小説	短編	応募	2022/9/30	世界乱数					反仮想体 1	第10回星新一賞
-麻井均	論考			2023/12/30	なぜVTuberを書き記すのか： 文化としてのVTuberの構築に向けて	VTrue Vol.2		p. 65-79	C103		
-麻井均	論考		レポート	2023/7/27	金玉の神話					反仮想体 1	
-麻井均	論考		紙	2023/8/12	実家、あるいはどこかで推しが配信していてくれること: 帰るべき場所としての推し論	VTrue Vol.1		p. 14-17	C102		
-麻井均	その他		紙	2023/8/12	VTrue刊行宣言	VTrue Vol.1		最終ページ	C102	VTrue各号・V研ウェブサイト	
-半知半会	雑誌	112ページ	紙	2023/8/13	反仮想体 1				C102		自家製本、112ページ＋表紙、モノクロ
-麻井均	エッセイ		紙	2023/8/13	推しは消え、人は死ぬ	反仮想体 1		p. 93-95			
-麻井均	その他		紙	2023/8/13	反仮想体　結	反仮想体 1		p.109			反仮想体 1の結語
-麻井均	本	14ページ	紙	2023/9/3	二度と戻れない未来： 麻井均2023年論集		https://booth.pm/ja/items/5069981		COMITIA145	Booth	コピー本、14ページ＋表紙、モノクロ
-麻井均	エッセイ		紙	2023/9/3	同じ演劇を三回見てきた話	二度と戻れない未来		p. 3-4	COMITIA145		
-麻井均	小説	短編	Web	2024/6/17	人間を弔うことについて	Note	https://note.com/asainingen/n/ncd1dd39af3e7	https://note.com/asainingen/n/ncd1dd39af3e7			
-麻井均	小説	短編	Web	2024/6/18	口伝と記録	Note	https://note.com/asainingen/n/n5814b6965a9e	https://note.com/asainingen/n/n5814b6965a9e			
-麻井均	小説	短編	Web	2024/6/20	バベルから来た男	Note	https://note.com/asainingen/n/n598427075949	https://note.com/asainingen/n/n598427075949			
-麻井均	小説	短編	Web	2024/6/23	電気通信上の政治	Note	https://note.com/asainingen/n/nabaf00b249de	https://note.com/asainingen/n/nabaf00b249de			
-麻井均	その他		紙	2024/8/11	早稲田V研VTuber音楽大調査	VTrue Vol.3		p. 54-58	C104		
-早稲田V研A	インタビュー		紙	2025/6/30	「推し」たい気持ちの最前線　大学生たちの推し活事情とVTuber文化	Hukyu		p. 204-210			早稲田V研のAさんとして掲載
+id	author	type	length	medium	date	title	romanizedTitle	translatedTitle	firstPublishedIn	link	placement	event	記事再録・雑誌再販	備考
+0001	麻井均	脚本		未公開	2022/3/10	存在の耐えられない重さ	Sonzai no taerarenai omosa	The Unbearable Heaviness of Being						
+0002	麻井均	小説	短編	Web	2021/7/12	百分の一の救済	Hyakubun no ichi no kyuusai	Salvation of One Percent	Pixiv	https://www.pixiv.net/novel/show.php?id=15596777	https://www.pixiv.net/novel/show.php?id=15596777			悲しき亜熱帯2
+0003	麻井均	小説	短編	Web	2021/7/7	雄星より愛をこめて	Yuusei yori ai wo komete	From the Male Planet with Love	Pixiv	https://www.pixiv.net/novel/show.php?id=15561843	https://www.pixiv.net/novel/show.php?id=15561843		反仮想体 1	悲しき亜熱帯1
+0004	麻井均	小説	短編	Web	2021/8/26	二人だけの閉じた生温い空間	Hutaridake no tojita namaatatakai kuukan	The Closed Lukewarm Space for the Only Two	Pixiv	https://www.pixiv.net/novel/show.php?id=15889772	https://www.pixiv.net/novel/show.php?id=15889772			悲しき亜熱帯3
+0005	麻井均	小説	短編	Web	2021/10/24	電書鳩	Denshobato	Carrier Pigeon's Tweet	Pixiv	https://www.pixiv.net/novel/show.php?id=16284035	https://www.pixiv.net/novel/show.php?id=16284035			
+0006	麻井均	小説	短編	応募	2022/9/30	世界乱数	Sekai Ransuu	The Coin and Coincidence				反仮想体 1	第10回星新一賞
+0007	麻井均	論考			2023/12/30	なぜVTuberを書き記すのか： 文化としてのVTuberの構築に向けて	Naze VTuber wo kakishirusu noka: Bunka to shiteno VTuber no kouchiku ni mukete	Why We Document VTubers: Building VTubers as a Culture	VTrue Vol.2		p. 65-79	C103		
+0008	麻井均	論考		レポート	2023/7/27	金玉の神話	Kintama no shinwa	Myth of Balls				反仮想体 1	
+0009	麻井均	論考		紙	2023/8/12	実家、あるいはどこかで推しが配信していてくれること: 帰るべき場所としての推し論	Jikka, aruiha dokoka de Oshi ga haishin siteite kureru koto: Kaerubeki basho to shiteno Oshi ron	The Home, or Oshi is Streaming Somewhere: Oshi as the Place We Go Back	VTrue Vol.1		p. 14-17	C102		
+0010	麻井均	その他		紙	2023/8/12	VTrue刊行宣言	VTrue Kankou Sengen	Manifesto VTrue	VTrue Vol.1		最終ページ	C102	VTrue各号・V研ウェブサイト	
+0011	半知半会	雑誌	112ページ	紙	2023/8/13	反仮想体 1	Han kasoutai 1	Anti-Imagenta 1				C102		自家製本、112ページ＋表紙、モノクロ
+0012	麻井均	エッセイ		紙	2023/8/13	推しは消え、人は死ぬ	Oshi ha kie, hito ha shinu	Oshi Fade Away, People Pass Away	反仮想体 1		p. 93-95			
+0013	麻井均	その他		紙	2023/8/13	反仮想体　結	Han kasoutai Ketsu	Epilogue of Anti-Imagenta 1	反仮想体 1		p.109			反仮想体 1の結語
+0014	麻井均	本	14ページ	紙	2023/9/3	二度と戻れない未来： 麻井均2023年論集	Nidoto modorenai mirai: ASAI Hitoshi 2023nen ronshuu	The Future We Cannot Return To: 2023 Works Collection of ASAI Hitoshi		https://booth.pm/ja/items/5069981		COMITIA145	Booth	コピー本、14ページ＋表紙、モノクロ
+0015	麻井均	エッセイ		紙	2023/9/3	同じ演劇を三回見てきた話	Onaji engeki wo sankai mitekita hanashi	Saw the Same Play Thrice	二度と戻れない未来		p. 3-4	COMITIA145		
+0016	麻井均	小説	短編	Web	2024/6/17	人間を弔うことについて	Ningen wo tomurau koto ni tsuite	Mourning for Man	Note	https://note.com/asainingen/n/ncd1dd39af3e7	https://note.com/asainingen/n/ncd1dd39af3e7			
+0017	麻井均	小説	短編	Web	2024/6/18	口伝と記録	Kuden to kiroku	Dictation and Documentation	Note	https://note.com/asainingen/n/n5814b6965a9e	https://note.com/asainingen/n/n5814b6965a9e			
+0018	麻井均	小説	短編	Web	2024/6/20	バベルから来た男	Babel kara kita otoko	The Man From Babel	Note	https://note.com/asainingen/n/n598427075949	https://note.com/asainingen/n/n598427075949			
+0019	麻井均	小説	短編	Web	2024/6/23	電気通信上の政治	Denki tsushin jou no seiji	Politics on ICT	Note	https://note.com/asainingen/n/nabaf00b249de	https://note.com/asainingen/n/nabaf00b249de			
+0020	麻井均	その他		紙	2024/8/11	早稲田V研VTuber音楽大調査	WasedaVken VTuber ongaku daichousa	Survey on VTuber Music in Waseda VTuber Society	VTrue Vol.3		p. 54-58	C104		
+0021	早稲田V研A	インタビュー		紙	2025/6/30	「推し」たい気持ちの最前線　大学生たちの推し活事情とVTuber文化	Oshitai kimochi no saizensen: Daigakusei tachi no Oshikatsu jijou to VTuber bunka	The Forefront of Desire to Do Fan Activities: University Students' Oshikatsu Practices and VTuber Culture	Hukyu 1		p. 204-210			早稲田V研のAさんとして掲載

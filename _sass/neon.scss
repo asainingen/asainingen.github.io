@@ -7,16 +7,12 @@
 }
 
 @keyframes blinker {
-  0% {
+  0%, 100% {
     color: $bg-color;
     background-color: $text-color;
   }
   50% {
     color: $text-color;
     background-color: $bg-color;
-  }
-  100% {
-    color: $bg-color;
-    background-color: $text-color;
   }
 }

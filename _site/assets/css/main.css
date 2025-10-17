@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans+JP:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
 * {
-  font-family: "Courier Prime", "Roboto", "Noto Sans JP", monospace, sans-serif;
+  font-family: "Courier Prime", "Noto Sans JP", monospace, sans-serif;
   font-weight: 400;
   font-size: 20px;
   color: #00ee00;
@@ -19,17 +19,13 @@
 }
 
 @keyframes blinker {
-  0% {
+  0%, 100% {
     color: #111111;
     background-color: #00ee00;
   }
   50% {
     color: #00ee00;
     background-color: #111111;
-  }
-  100% {
-    color: #111111;
-    background-color: #00ee00;
   }
 }
 
@@ -48,6 +44,11 @@ p {
   margin: auto;
 }
 
+:lang(ja) p {
+  font-size: 18px;
+  padding-top: 0.1rem;
+}
+
 html,
 body {
   height: 100%;
@@ -59,9 +60,10 @@ body {
 body {
   background-color: #111111;
   overflow: auto;
+  line-height: 30px;
 }
 
-a:hover {
+.blinker, .lang-switch:hover, a:hover, .blink:hover {
   color: #111111;
   background-color: #00ee00;
   animation: blinker 1.5s infinite steps(1);
@@ -86,7 +88,7 @@ button {
   grid-template-rows: 140px auto 10px;
   grid-template-columns: 200px auto 200px;
   grid-gap: 40px;
-  min-height: 99.9vh;
+  min-height: 99vh;
   position: relative;
   filter: blur(0.3px);
 }
@@ -108,12 +110,13 @@ button {
 main {
   grid-area: main-content;
   position: relative;
+  margin-left: 20px;
 }
 
 main a {
   text-decoration: underline;
   color: #00ff00;
-  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
+  text-shadow: 0 0 2.5px #00ff00, 0 0 5px #00ff00, 0 0 10px #00ff00;
 }
 
 main a p {
@@ -123,12 +126,16 @@ main a p {
 main ul {
   list-style: square;
   margin-left: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
   padding: 0;
 }
 
 main ul li {
   line-height: 30px;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .sidebar-right {
@@ -181,18 +188,21 @@ header a {
 
 /* フッター */
 footer {
-  top: 100vh;
   width: 100%;
-  position: sticky;
   z-index: 10;
   background-color: #00ee00;
+  margin: 0 0 0 0;
+  padding: 0;
   box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
 }
 
 #footer-info {
+  display: inline;
   text-align: left;
   font-size: 10px;
   color: #111111;
+  margin: 0 0 0 0;
+  padding: 0 0 0 10px;
 }
 
 /*　サイドバー */
@@ -244,7 +254,6 @@ footer {
 .lang-switch:hover {
   text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
   filter: blur(0.2px);
-  animation: blinker 1.5s infinite steps(1);
 }
 
 /* h要素 */
@@ -252,32 +261,52 @@ h1 {
   text-align: center;
   font-size: 40px;
   margin-top: 0px;
+  margin-left: -20px;
   margin-bottom: 40px;
   font-weight: 700;
+  line-height: 2em;
+}
+
+h1::before {
+  content: "#";
+  color: #333333;
+  margin-left: -1.5em;
+  padding-right: 0.3em;
 }
 
 h2 {
-  font-size: 20px;
+  display: block;
   border-bottom: 2px solid #333333;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-left: -20px;
+}
+
+h2::before {
+  content: "##";
+  color: #333333;
+  margin-left: -1.5em;
+  padding-right: 0.3em;
 }
 
 h3 {
+  display: inline-block;
   font-size: 20px;
-  margin-top: 20px;
+  border-bottom: 1px solid #333333;
+  margin-left: -20px;
+  margin-top: 10px;
   margin-bottom: 10px;
-  line-height: 30px;
 }
 
 h3::before {
-  content: "◆";
-  display: inline-block;
+  content: "###";
   color: #333333;
-  line-height: 30px;
-  vertical-align: middle;
-  font-size: 10px;
-  margin-right: 10px;
+  margin-left: -2.1em;
+  padding-right: 0.3em;
+  font-size: 0.7em;
+}
+
+h2 + h3 {
+  margin-top: 0px;
 }
 
 /* リスト */
@@ -289,6 +318,7 @@ ul {
 
 .not-list li {
   list-style: none;
+  margin-left: -1em;
 }
 
 /* テーブル */
@@ -309,7 +339,70 @@ td {
   }
 }
 
+:lang(en) .work_title_original {
+  display: none;
+}
+
+:lang(en) .work_title_translated {
+  display: inline;
+}
+
+:lang(en) .work_title_romanized {
+  display: inline;
+  font-size: 0.7em;
+}
+
+:lang(en) .ja_only {
+  display: none;
+}
+
+:lang(ja) .work_title_original {
+  display: inline;
+}
+
+:lang(ja) .work_title_romanized {
+  display: none;
+}
+
+:lang(ja) .work_title_translated {
+  display: inline;
+  font-size: 0.7em;
+}
+
+:lang(ja) .en_only {
+  display: none;
+}
+
+.works_list h3 {
+  margin-bottom: 0;
+}
+
+.work {
+  display: block;
+  text-indent: -6.6rem;
+  padding-left: 6.6rem;
+  margin-top: 1rem;
+  line-height: 1rem;
+}
+
+.work h3 {
+  margin-bottom: 0;
+}
+
+.work_date {
+  display: inline;
+}
+
+.work_title {
+  display: inline;
+  width: 100%;
+}
+
 /* スマートフォン対応 */
+.mobile_only {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .container {
     /* 左サイドバーを削除、右サイドバーをmain-content下へ */
@@ -326,8 +419,8 @@ td {
   }
   header,
 main {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   header {
     margin-top: 20px;
@@ -403,6 +496,29 @@ main {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 997;
+  }
+  .work {
+    text-indent: 0em;
+    padding-left: 0em;
+  }
+  .work_date {
+    display: block;
+    margin-top: 0;
+    margin-left: -1rem;
+    margin-bottom: -10px;
+  }
+  .work_title_romanized {
+    display: block;
+    margin-left: 0rem;
+  }
+  .work_title_translated {
+    display: block;
+  }
+  .mobile_only {
+    display: inline;
+  }
+  .pc_only {
+    display: none;
   }
 }
 
