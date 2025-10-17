@@ -266,7 +266,7 @@ h1 {
   margin-left: -20px;
   margin-bottom: 40px;
   font-weight: 700;
-  line-height: 2em;
+  line-height: 40px;
 }
 
 h1::before {
