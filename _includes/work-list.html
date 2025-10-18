@@ -1,4 +1,4 @@
-{% assign works_sorted = include.works | sort: "date" | reverse %}
+{% assign works_sorted = include.works | sort: "date" %}
 {% assign scripts = works_sorted | where: "type", include.work_type %}
 
 {% if scripts.size > 0 %}
@@ -53,6 +53,8 @@
               </div>
             {% endif %}
           {% endif %}
+        {% else %}
+        <br class="work_first_appearance" />
         {% endif %}
       </li>
     {% endfor %}
