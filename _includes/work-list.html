@@ -3,9 +3,9 @@
 {% if scripts.size > 0 %}
   <ul>
     {% for work in scripts %}
-      <li class="work">
+      <li class="work" id="{{ work.id }}">
         <div class="work_date">
-        {% if work.date.size > 0 %}
+        {% if work.date.size %}
           {{ work.date | date: "%Y/%m/%d" }}
         {% else %}
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -24,9 +24,38 @@
         {% endif %}
           <div class="work_title_romanized opposite">{{ work.romanizedTitle }}</div>
         </div>
+        {% if work.firstAppearance %}
+          {% if work.firstAppearanceLinkOrId %}
+            {% if work.firstAppearanceEn %}
+              <div class="work_first_appearance ja_only">
+                <a href="{{ work.firstAppearanceLinkOrId }}">{{ work.firstAppearance }}</a>
+              </div>
+              <div class="work_first_appearance en_only">
+                <a href="{{ work.firstAppearanceLinkOrId }}">{{ work.firstAppearanceEn }}</a>
+              </div>
+                {% else %}
+              <div class="work_first_appearance">
+                <a href="{{ work.firstAppearanceLinkOrId }}">{{ work.firstAppearance }}</a>
+              </div>
+            {% endif %}
+          {% else %}
+            {% if work.firstAppearanceEn %}
+              <div class="work_first_appearance ja_only">
+                {{ work.firstAppearance }}
+              </div>
+              <div class="work_first_appearance en_only">
+                {{ work.firstAppearanceEn }}
+              </div>
+                {% else %}
+              <div class="work_first_appearance">
+                {{ work.firstAppearance }}
+              </div>
+            {% endif %}
+          {% endif %}
+        {% endif %}
       </li>
     {% endfor %}
   </ul>
 {% else %}
-  None.
+  <p>None.</p>
 {% endif %}

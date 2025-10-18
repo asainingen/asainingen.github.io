@@ -14,12 +14,13 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  vertical-align: bottom;
 }
 
 body {
   background-color: $bg-color;
   overflow: auto;
-  line-height: $main-fontsize * 1.5;
+  line-height: $main-fontsize * 2;
 }
 
 .blinker {
@@ -236,7 +237,7 @@ h1 {
     content: "#";
     color: $hr-color;
     margin-left: -1.5em;
-    padding-right: 0.3em;
+    padding-right: 0.2em;
   }
 }
 
@@ -244,12 +245,15 @@ h2 {
   display: block;
   border-bottom: 2px solid $hr-color;
   margin-top: 30px;
-  margin-left: -$main-fontsize;
+  margin-left: -$main-fontsize + 2px;
+  padding-left: 2px;
+  line-height: 1.2em;
   &::before {
     content: "##";
     color: $hr-color;
     margin-left: -1.5em;
     padding-right: 0.3em;
+    letter-spacing: -0.1em;
   }
 }
 
@@ -257,20 +261,28 @@ h3 {
   display: inline-block;
   font-size: $main-fontsize;
   border-bottom: 1px solid $hr-color;
+  margin-top: 15px;
   margin-left: -$main-fontsize;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  padding-left: 33px;
+  line-height: 1em;
   &::before {
     content: "###";
     color: $hr-color;
     margin-left: -2.1em;
     padding-right: 0.3em;
-    font-size: 0.7em;
+    font-size: 0.8em;
+    letter-spacing: -0.1em;
   }
 }
 
 h2 + h3 {
-  margin-top: 0px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h2:has(+ h3) {
+  margin-bottom: 10px;
 }
 
 /* リスト */
@@ -295,6 +307,11 @@ table {
 
 td {
   vertical-align: top;
+}
+
+// smallは0.7倍
+.small{
+  font-size: 0.7em
 }
 
 /* nowpage */
@@ -341,21 +358,15 @@ td {
   }
 }
 
-.works_list {
-  h3 {
-    margin-bottom: 0;
-  }
-}
-
 .work {
   display: block;
-  text-indent: -6.6rem;
-  padding-left: 6.6rem;
-  margin-top: 1rem;
+  text-indent: -7.25rem;
+  padding-left: 7.25rem;
   line-height: 1rem;
-  h3 {
-    margin-bottom: 0;
-  }
+}
+
+.work + .work {
+  margin-top: 1rem;
 }
 
 .work_date {
@@ -365,6 +376,16 @@ td {
 .work_title {
   display: inline;
   width: 100%;
+}
+
+.work_first_appearance {
+  display: block;
+  font-size: 0.7em;
+  text-align: right;
+  a {
+    font-size: 1em;
+    text-decoration: none;
+  }
 }
 
 /* スマートフォン対応 */

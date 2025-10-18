@@ -1,4 +1,4 @@
 ---
-layout: Default
+layout: default
 ---
 aaaaaaaaaa

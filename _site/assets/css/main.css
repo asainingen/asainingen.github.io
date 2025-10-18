@@ -67,12 +67,13 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  vertical-align: bottom;
 }
 
 body {
   background-color: #111111;
   overflow: auto;
-  line-height: 30px;
+  line-height: 40px;
 }
 
 .blinker, .lang-switch:hover, a:hover, .blink:hover {
@@ -285,14 +286,16 @@ h1::before {
   content: "#";
   color: #333333;
   margin-left: -1.5em;
-  padding-right: 0.3em;
+  padding-right: 0.2em;
 }
 
 h2 {
   display: block;
   border-bottom: 2px solid #333333;
   margin-top: 30px;
-  margin-left: -20px;
+  margin-left: -18px;
+  padding-left: 2px;
+  line-height: 1.2em;
 }
 
 h2::before {
@@ -300,15 +303,18 @@ h2::before {
   color: #333333;
   margin-left: -1.5em;
   padding-right: 0.3em;
+  letter-spacing: -0.1em;
 }
 
 h3 {
   display: inline-block;
   font-size: 20px;
   border-bottom: 1px solid #333333;
+  margin-top: 15px;
   margin-left: -20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  padding-left: 33px;
+  line-height: 1em;
 }
 
 h3::before {
@@ -316,11 +322,17 @@ h3::before {
   color: #333333;
   margin-left: -2.1em;
   padding-right: 0.3em;
-  font-size: 0.7em;
+  font-size: 0.8em;
+  letter-spacing: -0.1em;
 }
 
 h2 + h3 {
-  margin-top: 0px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h2:has(+ h3) {
+  margin-bottom: 10px;
 }
 
 /* リスト */
@@ -344,6 +356,10 @@ table {
 
 td {
   vertical-align: top;
+}
+
+.small {
+  font-size: 0.7em;
 }
 
 /* nowpage */
@@ -387,20 +403,15 @@ td {
   display: none;
 }
 
-.works_list h3 {
-  margin-bottom: 0;
-}
-
 .work {
   display: block;
-  text-indent: -6.6rem;
-  padding-left: 6.6rem;
-  margin-top: 1rem;
+  text-indent: -7.25rem;
+  padding-left: 7.25rem;
   line-height: 1rem;
 }
 
-.work h3 {
-  margin-bottom: 0;
+.work + .work {
+  margin-top: 1rem;
 }
 
 .work_date {
@@ -410,6 +421,17 @@ td {
 .work_title {
   display: inline;
   width: 100%;
+}
+
+.work_first_appearance {
+  display: block;
+  font-size: 0.7em;
+  text-align: right;
+}
+
+.work_first_appearance a {
+  font-size: 1em;
+  text-decoration: none;
 }
 
 /* スマートフォン対応 */
