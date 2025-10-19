@@ -229,7 +229,6 @@ h1 {
   text-align: center;
   font-size: $title-fontsize;
   margin-top: 0px;
-  margin-left: -$main-fontsize;
   margin-bottom: 40px;
   font-weight: 700;
   line-height: $main-fontsize * 2;
@@ -310,8 +309,8 @@ td {
 }
 
 // smallは0.7倍
-.small{
-  font-size: 0.7em
+.small {
+  font-size: 0.7em;
 }
 
 /* nowpage */
@@ -384,7 +383,7 @@ td {
   text-align: right;
   a {
     font-size: 1em;
-    text-decoration: none;
+    text-decoration: underline dashed;
   }
 }
 
