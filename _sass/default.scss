@@ -311,6 +311,11 @@ td {
 // smallは0.7倍
 .small {
   font-size: 0.7em;
+  line-height: 1.5em;
+}
+
+.align_right {
+  text-align: right;
 }
 
 /* nowpage */
@@ -361,7 +366,7 @@ td {
   display: block;
   text-indent: -7.25rem;
   padding-left: 7.25rem;
-  line-height: 1rem;
+  line-height: $main-fontsize;
 }
 
 .work + .work {
@@ -387,12 +392,20 @@ td {
   }
 }
 
+/* novel_text*/
+.novel_text_field {
+  display: block;
+  margin: auto;
+  padding: auto;
+  max-width: 800px;
+}
+
 /* スマートフォン対応 */
 .mobile_only {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .container {
     /* 左サイドバーを削除、右サイドバーをmain-content下へ */
     grid-template-areas:
@@ -526,4 +539,5 @@ td {
   .pc_only {
     display: none;
   }
+
 }
