@@ -1,0 +1,794 @@
+[
+  {
+    "id": "0001",
+    "publisher": "麻井均",
+    "author": "麻井均",
+    "myContribution": {
+      "ja": "著者",
+      "en": "Author"
+    },
+    "language": "ja",
+    "type": "脚本",
+    "length": null,
+    "medium": null,
+    "date": "2022/03/10",
+    "publish": false,
+    "title": {
+      "ja": {
+        "text": "存在の耐えられない重さ",
+        "isOriginal": true
+      },
+      "en": {
+        "text": "The Unbearable Heaviness of Being",
+        "isOriginal": false
+      },
+      "romanized": "Sonzai no Taerarenai Omosa"
+    },
+    "firstAppearance": {
+      "ja": null,
+      "en": null,
+      "linkOrId": null
+    },
+    "link": null,
+    "placement": null,
+    "event": null,
+    "reprint": null,
+    "note": null
+  },
+  {
+    "id": "0002",
+    "publisher": "麻井均",
+    "author": "麻井均",
+    "myContribution": {
+      "ja": "著者",
+      "en": "Author"
+    },
+    "language": "ja",
+    "type": "小説",
+    "length": "短編",
+    "medium": "Web",
+    "date": "2021/07/12",
+    "publish": true,
+    "title": {
+      "ja": {
+        "text": "百分の一の救済",
+        "isOriginal": true
+      },
+      "en": {
+        "text": "Salvation of One Percent",
+        "isOriginal": false
+      },
+      "romanized": "Hyakubun no Ichi no Kyuusai"
+    },
+    "firstAppearance": {
+      "ja": "Pixiv",
+      "en": null,
+      "linkOrId": null
+    },
+    "link": "https://www.pixiv.net/novel/show.php?id=15596777",
+    "placement": "https://www.pixiv.net/novel/show.php?id=15596777",
+    "event": null,
+    "reprint": "悲しき亜熱帯2",
+    "note": null
+  },
+  {
+    "id": "0003",
+    "publisher": "麻井均",
+    "author": "麻井均",
+    "myContribution": {
+      "ja": "著者",
+      "en": "Author"
+    },
+    "language": "ja",
+    "type": "小説",
+    "length": "短編",
+    "medium": "Web",
+    "date": "2021/07/07",
+    "publish": true,
+    "title": {
+      "ja": {
+        "text": "雄星より愛をこめて",
+        "isOriginal": true
+      },
+      "en": {
+        "text": "From the Male Planet with Love",
+        "isOriginal": false
+      },
+      "romanized": "Yuusei Yori Ai wo Komete"
+    },
+    "firstAppearance": {
+      "ja": "Pixiv",
+      "en": null,
+      "linkOrId": null
+    },
+    "link": "https://www.pixiv.net/novel/show.php?id=15561843",
+    "placement": "https://www.pixiv.net/novel/show.php?id=15561843",
+    "event": "反仮想体 1",
+    "reprint": "悲しき亜熱帯1",
+    "note": null
+  },
+  {
+    "id": "0004",
+    "publisher": "麻井均",
+    "author": "麻井均",
+    "myContribution": {
+      "ja": "著者",
+      "en": "Author"
+    },
+    "language": "ja",
+    "type": "小説",
+    "length": "短編",
+    "medium": "Web",
+    "date": "2021/08/26",
+    "publish": true,
+    "title": {
+      "ja": {
+        "text": "二人だけの閉じた生温い空間",
+        "isOriginal": true
+      },
+      "en": {
+        "text": "The Closed Lukewarm Space for the Only Two",
+        "isOriginal": false
+      },
+      "romanized": "Hutaridake no Tojita Namaatatakai Kuukan"
+    },
+    "firstAppearance": {
+      "ja": "Pixiv",
+      "en": null,
+      "linkOrId": null
+    },
+    "link": "https://www.pixiv.net/novel/show.php?id=15889772",
+    "placement": "https://www.pixiv.net/novel/show.php?id=15889772",
+    "event": null,
+    "reprint": "悲しき亜熱帯3",
+    "note": null
+  },
+  {
+    "id": "0005",
+    "publisher": "麻井均",
+    "author": "麻井均",
+    "myContribution": {
+      "ja": "著者",
+      "en": "Author"
+    },
+    "language": "ja",
+    "type": "小説",
+    "length": "短編",
+    "medium": "Web",
+    "date": "2021/10/24",
+    "publish": true,
+    "title": {
+      "ja": {
+        "text": "電書鳩",
+        "isOriginal": true
+      },
+      "en": {
+        "text": "Carrier Pigeon's Tweet",
+        "isOriginal": false
+      },
+      "romanized": "Denshobato"
+    },
+    "firstAppearance": {
+      "ja": "Pixiv",
+      "en": null,
+      "linkOrId": null
+    },
+    "link": "https://www.pixiv.net/novel/show.php?id=16284035",
+    "placement": "https://www.pixiv.net/novel/show.php?id=16284035",
+    "event": null,
+    "reprint": null,
+    "note": null
+  },
+  {
+    "id": "0006",
+    "publisher": "麻井均",
+    "author": "麻井均",
+    "myContribution": {
+      "ja": "著者",
+      "en": "Author"
+    },
+    "language": "ja",
+    "type": "小説",
+    "length": "短編",
+    "medium": "応募",
+    "date": "2022/09/30",
+    "publish": true,
+    "title": {
+      "ja": {
+        "text": "世界乱数",
+        "isOriginal": true
+      },
+      "en": {
+        "text": "The Coin and Coincidence",
+        "isOriginal": false
+      },
+      "romanized": "Sekai Ransuu"
+    },
+    "firstAppearance": {
+      "ja": null,
+      "en": null,
+      "linkOrId": null
+    },
+    "link": null,
+    "placement": null,
+    "event": "反仮想体 1",
+    "reprint": "第10回星新一賞",
+    "note": null
+  },
+  {
+    "id": "0007",
+    "publisher": "麻井均",
+    "author": "麻井均",
+    "myContribution": {
+      "ja": "著者",
+      "en": "Author"
+    },
+    "language": "ja",
+    "type": "論考",
+    "length": null,
+    "medium": null,
+    "date": "2023/12/30",
+    "publish": true,
+    "title": {
+      "ja": {
+        "text": "なぜVTuberを書き記すのか： 文化としてのVTuberの構築に向けて",
+        "isOriginal": true
+      },
+      "en": {
+        "text": "Why We Document VTubers: Building VTubers as a Culture",
+        "isOriginal": false
+      },
+      "romanized": "Naze VTuber wo Kakishirusu Noka: Bunka to Shiteno VTuber no Kouchiku ni Mukete"
+    },
+    "firstAppearance": {
+      "ja": "VTrue Vol.2",
+      "en": null,
+      "linkOrId": "https://waseda.vken.org/publish/vtrue/vol2"
+    },
+    "link": null,
+    "placement": "p. 65-79",
+    "event": "C103",
+    "reprint": null,
+    "note": null
+  },
+  {
+    "id": "0008",
+    "publisher": "麻井均",
+    "author": "麻井均",
+    "myContribution": {
+      "ja": "著者",
+      "en": "Author"
+    },
+    "language": "ja",
+    "type": "論考",
+    "length": null,
+    "medium": "レポート",
+    "date": "2023/07/27",
+    "publish": true,
+    "title": {
+      "ja": {
+        "text": "金玉の神話",
+        "isOriginal": true
+      },
+      "en": {
+        "text": "Myth of Balls",
+        "isOriginal": false
+      },
+      "romanized": "Kintama no Shinwa"
+    },
+    "firstAppearance": {
+      "ja": null,
+      "en": null,
+      "linkOrId": "#0011"
+    },
+    "link": null,
+    "placement": null,
+    "event": "反仮想体 1",
+    "reprint": null,
+    "note": null
+  },
+  {
+    "id": "0009",
+    "publisher": "麻井均",
+    "author": "麻井均",
+    "myContribution": {
+      "ja": "著者",
+      "en": "Author"
+    },
+    "language": "ja",
+    "type": "論考",
+    "length": null,
+    "medium": "紙",
+    "date": "2023/08/12",
+    "publish": true,
+    "title": {
+      "ja": {
+        "text": "実家、あるいはどこかで推しが配信していてくれること: 帰るべき場所としての推し論",
+        "isOriginal": true
+      },
+      "en": {
+        "text": "The Home, or Oshi is Streaming Somewhere: Oshi as the Place We Go Back",
+        "isOriginal": false
+      },
+      "romanized": "Jikka, Aruiha Dokoka de Oshi ga Haishin Siteite Kureru Koto: Kaerubeki Basho to Shiteno Oshi Ron"
+    },
+    "firstAppearance": {
+      "ja": "VTrue Vol.1",
+      "en": null,
+      "linkOrId": "https://waseda.vken.org/publish/vtrue/vol1"
+    },
+    "link": null,
+    "placement": "p. 14-17",
+    "event": "C102",
+    "reprint": null,
+    "note": null
+  },
+  {
+    "id": "0010",
+    "publisher": "麻井均",
+    "author": "麻井均",
+    "myContribution": {
+      "ja": "著者",
+      "en": "Author"
+    },
+    "language": "ja",
+    "type": "その他",
+    "length": null,
+    "medium": "紙",
+    "date": "2023/08/12",
+    "publish": true,
+    "title": {
+      "ja": {
+        "text": "VTrue刊行宣言",
+        "isOriginal": true
+      },
+      "en": {
+        "text": "Manifesto VTrue",
+        "isOriginal": false
+      },
+      "romanized": "VTrue Kankou Sengen"
+    },
+    "firstAppearance": {
+      "ja": "VTrue Vol.1",
+      "en": null,
+      "linkOrId": "https://waseda.vken.org/publish/vtrue/vol1"
+    },
+    "link": "https://waseda.vken.org/publish/vtrue#h.5d75e2t1u8ri",
+    "placement": "最終ページ",
+    "event": "C102",
+    "reprint": "VTrue各号・V研ウェブサイト",
+    "note": null
+  },
+  {
+    "id": "0011",
+    "publisher": "半知半会",
+    "author": "半知半会",
+    "myContribution": {
+      "ja": "著者",
+      "en": "Editor"
+    },
+    "language": "ja",
+    "type": "合同誌",
+    "length": "112ページ",
+    "medium": "紙",
+    "date": "2023/08/13",
+    "publish": true,
+    "title": {
+      "ja": {
+        "text": "反仮想体 1",
+        "isOriginal": true
+      },
+      "en": {
+        "text": "Anti-Imagenta 1",
+        "isOriginal": false
+      },
+      "romanized": "Han-kasoutai 1"
+    },
+    "firstAppearance": {
+      "ja": null,
+      "en": null,
+      "linkOrId": null
+    },
+    "link": null,
+    "placement": null,
+    "event": "C102",
+    "reprint": null,
+    "note": "自家製本、112ページ＋表紙、モノクロ"
+  },
+  {
+    "id": "0012",
+    "publisher": "麻井均",
+    "author": "麻井均",
+    "myContribution": {
+      "ja": "著者",
+      "en": "Author"
+    },
+    "language": "ja",
+    "type": "エッセイ",
+    "length": null,
+    "medium": "紙",
+    "date": "2023/08/13",
+    "publish": true,
+    "title": {
+      "ja": {
+        "text": "推しは消え、人は死ぬ",
+        "isOriginal": true
+      },
+      "en": {
+        "text": "Oshi Fade Away, People Pass Away",
+        "isOriginal": false
+      },
+      "romanized": "Oshi ha Kie, Hito ha shinu"
+    },
+    "firstAppearance": {
+      "ja": "反仮想体 1",
+      "en": "Anti-Imagenta 1",
+      "linkOrId": "#0011"
+    },
+    "link": null,
+    "placement": "p. 93-95",
+    "event": null,
+    "reprint": null,
+    "note": null
+  },
+  {
+    "id": "0013",
+    "publisher": "麻井均",
+    "author": "麻井均",
+    "myContribution": {
+      "ja": "著者",
+      "en": "Author"
+    },
+    "language": "ja",
+    "type": "その他",
+    "length": null,
+    "medium": "紙",
+    "date": "2023/08/13",
+    "publish": true,
+    "title": {
+      "ja": {
+        "text": "反仮想体　結",
+        "isOriginal": true
+      },
+      "en": {
+        "text": "Epilogue of Anti-Imagenta 1",
+        "isOriginal": false
+      },
+      "romanized": "Han-Kasoutai Ketsu"
+    },
+    "firstAppearance": {
+      "ja": "反仮想体 1",
+      "en": "Anti-Imagenta 1",
+      "linkOrId": "#0011"
+    },
+    "link": null,
+    "placement": "p.109",
+    "event": null,
+    "reprint": null,
+    "note": "反仮想体 1の結語"
+  },
+  {
+    "id": "0014",
+    "publisher": "麻井均",
+    "author": "麻井均",
+    "myContribution": {
+      "ja": "著者",
+      "en": "Author"
+    },
+    "language": "ja",
+    "type": "個人誌",
+    "length": "14ページ",
+    "medium": "紙",
+    "date": "2023/09/03",
+    "publish": true,
+    "title": {
+      "ja": {
+        "text": "二度と戻れない未来： 麻井均2023年論集",
+        "isOriginal": true
+      },
+      "en": {
+        "text": "The Future We Cannot Return To: 2023 Works Collection of ASAI Hitoshi",
+        "isOriginal": false
+      },
+      "romanized": "Nidoto Modorenai Mirai: ASAI Hitoshi 2023-Nen Ronshuu"
+    },
+    "firstAppearance": {
+      "ja": null,
+      "en": null,
+      "linkOrId": null
+    },
+    "link": "https://booth.pm/ja/items/5069981",
+    "placement": null,
+    "event": "COMITIA145",
+    "reprint": "Booth",
+    "note": "コピー本、14ページ＋表紙、モノクロ"
+  },
+  {
+    "id": "0015",
+    "publisher": "麻井均",
+    "author": "麻井均",
+    "myContribution": {
+      "ja": "著者",
+      "en": "Author"
+    },
+    "language": "ja",
+    "type": "エッセイ",
+    "length": null,
+    "medium": "紙",
+    "date": "2023/09/03",
+    "publish": true,
+    "title": {
+      "ja": {
+        "text": "同じ演劇を三回見てきた話",
+        "isOriginal": true
+      },
+      "en": {
+        "text": "Saw the Same Play Thrice",
+        "isOriginal": false
+      },
+      "romanized": "Onaji Engeki wo Sankai Mitekita Hanashi"
+    },
+    "firstAppearance": {
+      "ja": "二度と戻れない未来： 麻井均2023年論集",
+      "en": "The Future We Cannot Return To: 2023 Works Collection of ASAI Hitoshi",
+      "linkOrId": "#0014"
+    },
+    "link": null,
+    "placement": "p. 3-4",
+    "event": "COMITIA145",
+    "reprint": null,
+    "note": null
+  },
+  {
+    "id": "0016",
+    "publisher": "麻井均",
+    "author": "麻井均",
+    "myContribution": {
+      "ja": "著者",
+      "en": "Author"
+    },
+    "language": "ja",
+    "type": "小説",
+    "length": "短編",
+    "medium": "Web",
+    "date": "2024/06/17",
+    "publish": true,
+    "title": {
+      "ja": {
+        "text": "人間を弔うことについて",
+        "isOriginal": true
+      },
+      "en": {
+        "text": "Mourning for Man",
+        "isOriginal": false
+      },
+      "romanized": "Ningen wo Tomurau Koto ni Tsuite"
+    },
+    "firstAppearance": {
+      "ja": "Note",
+      "en": null,
+      "linkOrId": null
+    },
+    "link": "https://note.com/asainingen/n/ncd1dd39af3e7",
+    "placement": "https://note.com/asainingen/n/ncd1dd39af3e7",
+    "event": null,
+    "reprint": null,
+    "note": null
+  },
+  {
+    "id": "0017",
+    "publisher": "麻井均",
+    "author": "麻井均",
+    "myContribution": {
+      "ja": "著者",
+      "en": "Author"
+    },
+    "language": "ja",
+    "type": "小説",
+    "length": "短編",
+    "medium": "Web",
+    "date": "2024/06/18",
+    "publish": true,
+    "title": {
+      "ja": {
+        "text": "口伝と記録",
+        "isOriginal": true
+      },
+      "en": {
+        "text": "Dictation and Documentation",
+        "isOriginal": false
+      },
+      "romanized": "Kuden to Kiroku"
+    },
+    "firstAppearance": {
+      "ja": "Note",
+      "en": null,
+      "linkOrId": null
+    },
+    "link": "https://note.com/asainingen/n/n5814b6965a9e",
+    "placement": "https://note.com/asainingen/n/n5814b6965a9e",
+    "event": null,
+    "reprint": null,
+    "note": null
+  },
+  {
+    "id": "0018",
+    "publisher": "麻井均",
+    "author": "麻井均",
+    "myContribution": {
+      "ja": "著者",
+      "en": "Author"
+    },
+    "language": "ja",
+    "type": "小説",
+    "length": "短編",
+    "medium": "Web",
+    "date": "2024/06/20",
+    "publish": true,
+    "title": {
+      "ja": {
+        "text": "バベルから来た男",
+        "isOriginal": true
+      },
+      "en": {
+        "text": "The Man From Babel",
+        "isOriginal": false
+      },
+      "romanized": "Babel kara Kita Otoko"
+    },
+    "firstAppearance": {
+      "ja": "Note",
+      "en": null,
+      "linkOrId": null
+    },
+    "link": "https://note.com/asainingen/n/n598427075949",
+    "placement": "https://note.com/asainingen/n/n598427075949",
+    "event": null,
+    "reprint": null,
+    "note": null
+  },
+  {
+    "id": "0019",
+    "publisher": "麻井均",
+    "author": "麻井均",
+    "myContribution": {
+      "ja": "著者",
+      "en": "Author"
+    },
+    "language": "ja",
+    "type": "小説",
+    "length": "短編",
+    "medium": "Web",
+    "date": "2024/06/23",
+    "publish": true,
+    "title": {
+      "ja": {
+        "text": "電気通信上の政治",
+        "isOriginal": true
+      },
+      "en": {
+        "text": "Politics on ICT",
+        "isOriginal": false
+      },
+      "romanized": "Denki Tsushin Jou no Seiji"
+    },
+    "firstAppearance": {
+      "ja": "Note",
+      "en": null,
+      "linkOrId": null
+    },
+    "link": "https://note.com/asainingen/n/nabaf00b249de",
+    "placement": "https://note.com/asainingen/n/nabaf00b249de",
+    "event": null,
+    "reprint": null,
+    "note": null
+  },
+  {
+    "id": "0020",
+    "publisher": "麻井均",
+    "author": "麻井均",
+    "myContribution": {
+      "ja": "著者",
+      "en": "Author"
+    },
+    "language": "ja",
+    "type": "その他",
+    "length": null,
+    "medium": "紙",
+    "date": "2024/08/11",
+    "publish": true,
+    "title": {
+      "ja": {
+        "text": "早稲田V研VTuber音楽大調査",
+        "isOriginal": true
+      },
+      "en": {
+        "text": "Survey on VTuber Music in Waseda VTuber Society",
+        "isOriginal": false
+      },
+      "romanized": "WasedaVken VTuber Ongaku Daichousa"
+    },
+    "firstAppearance": {
+      "ja": "VTrue Vol.3",
+      "en": null,
+      "linkOrId": "https://waseda.vken.org/publish/vtrue/vol3"
+    },
+    "link": null,
+    "placement": "p. 54-58",
+    "event": "C104",
+    "reprint": null,
+    "note": null
+  },
+  {
+    "id": "0021",
+    "publisher": "早稲田V研A",
+    "author": "早稲田V研A",
+    "myContribution": {
+      "ja": "インタビュイー",
+      "en": "Interviewee"
+    },
+    "language": "ja",
+    "type": "インタビュー",
+    "length": null,
+    "medium": "紙",
+    "date": "2025/06/30",
+    "publish": true,
+    "title": {
+      "ja": {
+        "text": "「推し」たい気持ちの最前線　大学生たちの推し活事情とVTuber文化",
+        "isOriginal": true
+      },
+      "en": {
+        "text": "The Forefront of Desire to Do Fan Activities: University Students' Oshikatsu Practices and VTuber Culture",
+        "isOriginal": false
+      },
+      "romanized": "Oshitai Kimochi no Saizensen: Daigakusei Tachi no Oshikatsu Jijou to VTuber Bunka"
+    },
+    "firstAppearance": {
+      "ja": "Hukyu 1",
+      "en": null,
+      "linkOrId": "https://hukyu.jp/"
+    },
+    "link": null,
+    "placement": "p. 204-210",
+    "event": null,
+    "reprint": null,
+    "note": "早稲田V研のAさんとして掲載"
+  },
+  {
+    "id": "0022",
+    "publisher": "関東VTuber学連（Vゆに）",
+    "author": "関東VTuber学連（Vゆに）ほか24名",
+    "myContribution": {
+      "ja": "企画",
+      "en": "Planner"
+    },
+    "language": "ja",
+    "type": "合同誌",
+    "length": null,
+    "medium": "紙",
+    "date": "2024/12/30",
+    "publish": true,
+    "title": {
+      "ja": {
+        "text": "VゆにVTuber図鑑 Vol.1",
+        "isOriginal": true
+      },
+      "en": {
+        "text": "V-Uni VTuber Visual Dictionary Vol.1",
+        "isOriginal": false
+      },
+      "romanized": "V-yuni VTuber Zukan Vol.1"
+    },
+    "firstAppearance": {
+      "ja": null,
+      "en": null,
+      "linkOrId": null
+    },
+    "link": null,
+    "placement": null,
+    "event": "C105",
+    "reprint": null,
+    "note": "企画"
+  }
+]
