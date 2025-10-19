@@ -1,0 +1,36 @@
+{
+    "id": id,
+    "publisher": publisher,
+    "author": author,
+    "myContribution": {
+      "ja": myContributionJa,
+      "en": myContributionEn
+    },
+    "language": 新規要素 ja/en,
+    "type": type,
+    "length": length,
+    "medium": medium,
+    "date": date,
+    "publish": 新規要素 true/false,
+    "title": {
+      "ja": {
+        "text": title,
+        "isOriginal": 新規要素 true
+      },
+      "en": {
+        "text": translatedTitle,
+        "isOriginal": 新規要素 false
+      }
+      "romanized": romanizedTitle,
+    },
+    "firstAppearance": {
+      "ja": firstAppearance,
+      "en": firstAppearanceEn,
+      "linkOrId": firstAppearanceLinkOrId
+    },
+    "link": link,
+    "placement": placement,
+    "event": event,
+    "reprint": 記事再録・雑誌再販,
+    "note": 備考
+  },

@@ -1,12 +1,18 @@
-{% assign works_sorted = include.works | sort: "date" %}
-{% assign scripts = works_sorted | where: "type", include.work_type %}
+{% assign works_sorted = site.data.works_json | sort: "date" %} 
+
+{% if include.work_type %}
+  {% assign scripts = works_sorted | where: "type", include.work_type %}
+{% else %}
+  {% assign scripts = works_sorted %}
+{% endif %}
+
 
 {% if scripts.size > 0 %}
   <ul>
     {% for work in scripts %}
       <li class="work" id="{{ work.id }}">
         <div class="work_date">
-        {% if work.date.size %}
+        {% if work.date %}
           {{ work.date | date: "%Y/%m/%d" }}
         {% else %}
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -14,44 +20,53 @@
         </div>
         <br class="mobile_only"/>
         <div class="work_title">
-        {% if work.link %}
-          <div class="work_title_original"><a href="{{ work.link }}">{{ work.title }}</a><br /></div>
-          <div class="work_title_translated en_only"><a href="{{ work.link }}">{{ work.translatedTitle }}</a><br /></div>
-          <div class="work_title_translated ja_only opposite">{{ work.translatedTitle }}<br /></div>
-        {% else %}
-          <div class="work_title_original">{{ work.title }}<br /></div>
-          <div class="work_title_translated en_only">{{ work.translatedTitle }}<br /></div>
-          <div class="work_title_translated ja_only opposite">{{ work.translatedTitle }}<br /></div>
-        {% endif %}
-          <div class="work_title_romanized opposite">{{ work.romanizedTitle }}</div>
-        </div>
-        {% if work.firstAppearance %}
-          {% if work.firstAppearanceLinkOrId %}
-            {% if work.firstAppearanceEn %}
-              <div class="work_first_appearance ja_only">
-                <a href="{{ work.firstAppearanceLinkOrId }}">{{ work.firstAppearance }}</a>
-              </div>
-              <div class="work_first_appearance en_only">
-                <a href="{{ work.firstAppearanceLinkOrId }}">{{ work.firstAppearanceEn }}</a>
-              </div>
-                {% else %}
-              <div class="work_first_appearance">
-                <a href="{{ work.firstAppearanceLinkOrId }}">{{ work.firstAppearance }}</a>
-              </div>
-            {% endif %}
+          {% if work.link %}
+            <div class="work_title_original">
+              <a href="{{ work.link }}">{{ work.title.ja.text }}</a><br />
+            </div>
+            <div class="work_title_translated en_only">
+              <a href="{{ work.link }}">{{ work.title.en.text }}</a><br />
+            </div>
+            <div class="work_title_translated ja_only opposite">
+              {{ work.title.en.text }}<br />
+            </div>
           {% else %}
-            {% if work.firstAppearanceEn %}
+            <div class="work_title_original">
+              {{ work.title.ja.text }}<br />
+            </div>
+          <div class="work_title_translated en_only">
+            {{ work.title.en.text }}<br />
+          </div>
+          <div class="work_title_translated ja_only opposite">
+            {{ work.title.en.text }}<br />
+          </div>
+          {% endif %}
+          <div class="work_title_romanized opposite">
+            {{ work.title.ja.romanized }}<br />
+          </div>
+        </div>
+
+        {% if work.firstAppearance.ja or work.firstAppearance.en %}
+          {% if work.firstAppearance.linkOrId %}
+
               <div class="work_first_appearance ja_only">
-                {{ work.firstAppearance }}
+                <a href="{{ work.firstAppearance.linkOrId }}">
+                  {{ work.firstAppearance.ja }} 
+                </a>
+              </div>
+
+              <div class="work_first_appearance en_only">
+                <a href="{{ work.firstAppearance.linkOrId }}">
+                  {{ work.firstAppearance.en | default: work.firstAppearance.ja }}
+                </a>
+              </div>
+          {% else %}
+              <div class="work_first_appearance ja_only">
+                {{ work.firstAppearance.ja | default: work.firstAppearance.en }}
               </div>
               <div class="work_first_appearance en_only">
-                {{ work.firstAppearanceEn }}
+                {{ work.firstAppearance.en | default: work.firstAppearance.ja }}
               </div>
-                {% else %}
-              <div class="work_first_appearance">
-                {{ work.firstAppearance }}
-              </div>
-            {% endif %}
           {% endif %}
         {% else %}
           <br class="work_first_appearance"/>
