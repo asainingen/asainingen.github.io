@@ -1,0 +1,48 @@
+{% assign work_data = include.work_data %}
+{% assign lang = include.lang %}
+
+<table class="work_metadata">
+
+  <tr>
+    <td>ID</td>
+    <td>{{work_data.id}}</td>
+  </tr>
+
+  {% if work_data.publisher != "麻井均" %}
+  <tr>
+    <td>Publisher</td>
+    <td>{{work_data.author}}</td>
+  </tr>
+  {% endif %}
+
+  <tr>
+    <td>{{work_data.myContribution.en}}</td>
+    <td>麻井均
+      {% if work_data.myContribution.isSingle == false %}
+      ほか
+      {% endif %}
+    </td>
+  </tr>
+
+  {% if work_data.publisher != "麻井均" %}
+  <tr>
+    <td>Publisher</td>
+    <td>{{work_data.publisher}}</td>
+  </tr>
+  {% endif %}
+
+  <tr>
+    <td>Date</td>
+    <td>{{work_data.date}}</td>
+  </tr>
+  {% if work_data.firstAppearance[lang] %}
+  <tr>
+    <td>First Appearance</td>
+    <td>{{ work_data.firstAppearance[lang] }} </td>
+  </tr>
+  {% endif %}
+  <tr>
+    <td>Language</td>
+    <td>{{work_data.language}}</td>
+  </tr>
+</table>
