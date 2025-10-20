@@ -5,7 +5,8 @@
     "author": "麻井均",
     "myContribution": {
       "ja": "著者",
-      "en": "Author"
+      "en": "Author",
+      "isSingle": true
     },
     "language": "ja",
     "type": "脚本",
@@ -41,7 +42,8 @@
     "author": "麻井均",
     "myContribution": {
       "ja": "著者",
-      "en": "Author"
+      "en": "Author",
+      "isSingle": true
     },
     "language": "ja",
     "type": "小説",
@@ -77,7 +79,8 @@
     "author": "麻井均",
     "myContribution": {
       "ja": "著者",
-      "en": "Author"
+      "en": "Author",
+      "isSingle": true
     },
     "language": "ja",
     "type": "小説",
@@ -98,7 +101,7 @@
     },
     "firstAppearance": {
       "ja": "Pixiv",
-      "en": null,
+      "en": "Pixiv",
       "linkOrId": null
     },
     "link": "https://www.pixiv.net/novel/show.php?id=15561843",
@@ -113,7 +116,8 @@
     "author": "麻井均",
     "myContribution": {
       "ja": "著者",
-      "en": "Author"
+      "en": "Author",
+      "isSingle": true
     },
     "language": "ja",
     "type": "小説",
@@ -149,7 +153,8 @@
     "author": "麻井均",
     "myContribution": {
       "ja": "著者",
-      "en": "Author"
+      "en": "Author",
+      "isSingle": true
     },
     "language": "ja",
     "type": "小説",
@@ -185,7 +190,8 @@
     "author": "麻井均",
     "myContribution": {
       "ja": "著者",
-      "en": "Author"
+      "en": "Author",
+      "isSingle": true
     },
     "language": "ja",
     "type": "小説",
@@ -221,7 +227,8 @@
     "author": "麻井均",
     "myContribution": {
       "ja": "著者",
-      "en": "Author"
+      "en": "Author",
+      "isSingle": true
     },
     "language": "ja",
     "type": "論考",
@@ -257,7 +264,8 @@
     "author": "麻井均",
     "myContribution": {
       "ja": "著者",
-      "en": "Author"
+      "en": "Author",
+      "isSingle": true
     },
     "language": "ja",
     "type": "論考",
@@ -293,7 +301,8 @@
     "author": "麻井均",
     "myContribution": {
       "ja": "著者",
-      "en": "Author"
+      "en": "Author",
+      "isSingle": true
     },
     "language": "ja",
     "type": "論考",
@@ -329,7 +338,8 @@
     "author": "麻井均",
     "myContribution": {
       "ja": "著者",
-      "en": "Author"
+      "en": "Author",
+      "isSingle": true
     },
     "language": "ja",
     "type": "その他",
@@ -365,7 +375,8 @@
     "author": "半知半会",
     "myContribution": {
       "ja": "著者",
-      "en": "Editor"
+      "en": "Editor",
+      "isSingle": false
     },
     "language": "ja",
     "type": "合同誌",
@@ -401,7 +412,8 @@
     "author": "麻井均",
     "myContribution": {
       "ja": "著者",
-      "en": "Author"
+      "en": "Author",
+      "isSingle": true
     },
     "language": "ja",
     "type": "エッセイ",
@@ -437,7 +449,8 @@
     "author": "麻井均",
     "myContribution": {
       "ja": "著者",
-      "en": "Author"
+      "en": "Author",
+      "isSingle": true
     },
     "language": "ja",
     "type": "その他",
@@ -473,7 +486,8 @@
     "author": "麻井均",
     "myContribution": {
       "ja": "著者",
-      "en": "Author"
+      "en": "Author",
+      "isSingle": true
     },
     "language": "ja",
     "type": "個人誌",
@@ -509,7 +523,8 @@
     "author": "麻井均",
     "myContribution": {
       "ja": "著者",
-      "en": "Author"
+      "en": "Author",
+      "isSingle": true
     },
     "language": "ja",
     "type": "エッセイ",
@@ -545,7 +560,8 @@
     "author": "麻井均",
     "myContribution": {
       "ja": "著者",
-      "en": "Author"
+      "en": "Author",
+      "isSingle": true
     },
     "language": "ja",
     "type": "小説",
@@ -581,7 +597,8 @@
     "author": "麻井均",
     "myContribution": {
       "ja": "著者",
-      "en": "Author"
+      "en": "Author",
+      "isSingle": true
     },
     "language": "ja",
     "type": "小説",
@@ -617,7 +634,8 @@
     "author": "麻井均",
     "myContribution": {
       "ja": "著者",
-      "en": "Author"
+      "en": "Author",
+      "isSingle": true
     },
     "language": "ja",
     "type": "小説",
@@ -653,7 +671,8 @@
     "author": "麻井均",
     "myContribution": {
       "ja": "著者",
-      "en": "Author"
+      "en": "Author",
+      "isSingle": true
     },
     "language": "ja",
     "type": "小説",
@@ -689,7 +708,8 @@
     "author": "麻井均",
     "myContribution": {
       "ja": "著者",
-      "en": "Author"
+      "en": "Author",
+      "isSingle": true
     },
     "language": "ja",
     "type": "その他",
@@ -725,7 +745,8 @@
     "author": "早稲田V研A",
     "myContribution": {
       "ja": "インタビュイー",
-      "en": "Interviewee"
+      "en": "Interviewee",
+      "isSingle": false
     },
     "language": "ja",
     "type": "インタビュー",
@@ -761,7 +782,8 @@
     "author": "関東VTuber学連（Vゆに）ほか24名",
     "myContribution": {
       "ja": "企画",
-      "en": "Planner"
+      "en": "Planner",
+      "isSingle": false
     },
     "language": "ja",
     "type": "合同誌",

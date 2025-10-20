@@ -5,3 +5,7 @@ gem 'jekyll-sass-converter', '~> 2.0' # jekyll-sass-converter 1.5.x の最新バ
 gem "bundler" # bundler自身も記述しておく
 gem 'jekyll-redirect-from'
 gem 'bigdecimal'
+
+group :jekyll_plugins do
+  gem 'jekyll-commonmark'
+end
